@@ -1,0 +1,1378 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="AP Gov Unit 1 review: practice tests, flashcards, and study games.">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>AP Gov Unit 1 Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Public+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: a test answer sheet. Timing marks run down the edge of each sheet, and every answer choice gets a fill-in bubble. */
+:root{
+  --paper:#edf1f2; --sheet:#ffffff; --ink:#16222b; --muted:#56656e; --rule:#d0dce1;
+  --form:#1b6a80; --form-strong:#114e60; --form-soft:#e1eef2;
+  --graphite:#2b3036; --on-fill:#ffffff;
+  --good:#1c7a45; --good-soft:#e2f2e8; --bad:#b4372b; --bad-soft:#f9e4e0;
+  --display:"Libre Caslon Text","Iowan Old Style",Georgia,serif;
+  --body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;
+  --r:12px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0f1519; --sheet:#161f25; --ink:#e3eaee; --muted:#98a7b0; --rule:#29373f;
+  --form:#62b6cd; --form-strong:#95d0e2; --form-soft:#17313a;
+  --graphite:#dce1e5; --on-fill:#0f1519;
+  --good:#55c588; --good-soft:#143223; --bad:#f17f6d; --bad-soft:#3b1c17;
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --paper:#0f1519; --sheet:#161f25; --ink:#e3eaee; --muted:#98a7b0; --rule:#29373f;
+  --form:#62b6cd; --form-strong:#95d0e2; --form-soft:#17313a;
+  --graphite:#dce1e5; --on-fill:#0f1519;
+  --good:#55c588; --good-soft:#143223; --bad:#f17f6d; --bad-soft:#3b1c17;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55}
+button{font-family:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--form);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.muted{color:var(--muted)} .small{font-size:14px}
+p{margin:0}
+h1,h2,h3,h4{margin:0;line-height:1.15;text-wrap:balance}
+
+/* ---------- header ---------- */
+.top{border-bottom:1px solid var(--rule);background:var(--paper)}
+.top-in{max-width:1060px;margin:0 auto;padding-inline:clamp(16px,4vw,32px);padding-block:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;background:none;border:0;padding:0;cursor:pointer;text-align:left}
+.seal{width:36px;height:36px;border-radius:50%;border:1.5px solid var(--form);display:grid;place-items:center;font-family:var(--mono);font-size:12px;font-weight:600;color:var(--form);flex:none}
+.brand-name{display:block;font-family:var(--display);font-weight:700;font-size:18px;line-height:1.15}
+.brand-sub{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+/* ---------- page ---------- */
+.wrap{max-width:1060px;margin:0 auto;padding-inline:clamp(16px,4vw,32px);padding-block:28px 80px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--form)}
+.section-title{font-family:var(--display);font-size:26px;margin:44px 0 16px}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.panel{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);padding:clamp(18px,3vw,26px)}
+.sheet{position:relative;background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);padding:clamp(20px,3vw,30px);padding-left:clamp(38px,4.4vw,52px)}
+.sheet::before,.face::before{content:"";position:absolute;left:clamp(13px,1.6vw,18px);top:22px;bottom:22px;width:9px;background:repeating-linear-gradient(to bottom,var(--ink) 0 5px,transparent 5px 17px);opacity:.8}
+.tag{display:inline-flex;align-items:center;font-family:var(--mono);font-size:12px;padding:3px 9px;border-radius:999px;border:1px solid var(--rule);color:var(--muted);background:var(--sheet)}
+.ph{font-family:var(--display);font-size:20px;margin-bottom:14px}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 18px;border-radius:8px;border:1px solid var(--rule);background:var(--sheet);color:var(--ink);font-weight:600;font-size:15px;cursor:pointer;transition:background .15s,border-color .15s}
+.btn:hover{border-color:var(--form)}
+.btn.primary{background:var(--form);border-color:var(--form);color:var(--on-fill)}
+.btn.primary:hover{background:var(--form-strong);border-color:var(--form-strong)}
+.btn.ghost{background:transparent;border-color:transparent;color:var(--form)}
+.btn.ghost:hover{background:var(--form-soft)}
+.btn.small{min-height:36px;padding:6px 12px;font-size:14px}
+.btn.big{min-height:50px;padding:12px 24px;font-size:16px}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+
+/* ---------- toggle chips (fill-in bubbles) ---------- */
+.chips{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chips.center{justify-content:center}
+.chip{display:inline-flex;align-items:center;gap:8px;min-height:38px;padding:6px 14px 6px 10px;border-radius:999px;border:1px solid var(--rule);background:var(--sheet);font-size:14px;font-weight:500;cursor:pointer}
+.chip::before{content:"";width:14px;height:14px;border-radius:50%;border:1.5px solid var(--form);flex:none}
+.chip:hover{border-color:var(--form)}
+.chip[aria-pressed="true"]{border-color:var(--form);background:var(--form-soft)}
+.chip[aria-pressed="true"]::before{background:var(--graphite);border-color:var(--graphite)}
+
+/* ---------- home ---------- */
+.hero{display:grid;gap:28px}
+@media (min-width:860px){.hero{grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);align-items:start}}
+.hero h1{font-family:var(--display);font-size:clamp(32px,5vw,48px);line-height:1.08;margin:10px 0 14px;letter-spacing:-.01em}
+.lede{font-size:18px;color:var(--muted);max-width:56ch;margin-bottom:22px}
+.side{display:grid;gap:18px;border-top:1px solid var(--rule);padding-top:20px}
+@media (min-width:860px){.side{border-top:0;border-left:1px solid var(--rule);padding-top:0;padding-left:28px}}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 12px}
+.stat{display:grid;gap:2px;min-width:0}
+.stat .num{font-family:var(--mono);font-size:24px;font-weight:500;font-variant-numeric:tabular-nums;line-height:1.1}
+.stat .lbl{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.meters{display:grid;gap:12px}
+.mtop{display:flex;justify-content:space-between;gap:8px;font-size:14px;margin-bottom:6px}
+.mtop b{font-weight:600}
+.mtop span{font-family:var(--mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.meter{height:8px;border-radius:999px;background:var(--form-soft);overflow:hidden}
+.meter>span{display:block;height:100%;background:var(--form);border-radius:inherit}
+.modes{display:grid;gap:14px;grid-template-columns:1fr}
+@media (min-width:540px){.modes{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:980px){.modes{grid-template-columns:repeat(4,1fr)}}
+.mode{display:flex;flex-direction:column;align-items:flex-start;gap:8px;text-align:left;padding:18px;border:1px solid var(--rule);border-radius:var(--r);background:var(--sheet);cursor:pointer;transition:border-color .15s,transform .15s}
+.mode:hover{border-color:var(--form);transform:translateY(-2px)}
+.mode.feature{background:var(--form-soft);border-color:var(--form)}
+.mode h3{font-family:var(--display);font-size:20px}
+.mode p{color:var(--muted);font-size:15px}
+.mmeta{margin-top:auto;font-family:var(--mono);font-size:12px;color:var(--form-strong)}
+.mini-bubbles{display:flex;gap:5px}
+.mini-bubbles .bubble{width:22px;height:22px;font-size:10px}
+.mini-bubbles .bubble.on{background:var(--graphite);border-color:var(--graphite);color:var(--on-fill)}
+.guide-banner{margin-top:14px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+.guide-banner h3{font-family:var(--display);font-size:20px;margin-bottom:4px}
+.weak{display:grid;gap:8px}
+.weak-row{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:12px;align-items:center;padding:10px 14px;border:1px solid var(--rule);border-radius:10px;background:var(--sheet)}
+.weak-row b{font-weight:600;min-width:0}
+.weak-row .pct{font-family:var(--mono);font-size:14px;color:var(--bad)}
+.footer-row{margin-top:36px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+
+/* ---------- setup ---------- */
+.narrow{max-width:820px;margin:0 auto}
+.setup{display:grid;gap:22px}
+.big-title{font-family:var(--display);font-size:clamp(26px,4vw,36px);margin-top:6px}
+.field{display:grid;gap:10px}
+.field-label{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.setup-foot{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;border-top:1px solid var(--rule);padding-top:18px}
+.center-panel{text-align:center;display:grid;gap:14px;justify-items:center}
+.best-line{font-family:var(--mono);font-size:15px;color:var(--muted)}
+
+/* ---------- quiz ---------- */
+.quiz{display:grid;gap:14px;max-width:820px;margin:0 auto;scroll-margin-top:16px}
+.quiz-head{display:grid;gap:10px}
+.quiz-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px;align-items:center}
+.qstats{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+.qstat{font-family:var(--mono);font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.qstat b{color:var(--ink);font-weight:600}
+.progress{height:6px;background:var(--form-soft);border-radius:999px;overflow:hidden}
+.progress>span{display:block;height:100%;background:var(--form);transition:width .3s}
+.lives{display:inline-flex;gap:5px;align-items:center}
+.life{width:15px;height:15px;border-radius:50%;border:1.5px solid var(--bad)}
+.life.on{background:var(--bad)}
+.qtags{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px}
+.qnum{font-family:var(--mono);font-weight:600;font-size:13px;min-width:30px;height:30px;padding:0 8px;border-radius:999px;background:var(--ink);color:var(--sheet);display:inline-grid;place-items:center}
+.qtext{font-family:var(--body);font-weight:600;font-size:clamp(18px,2.3vw,21px);line-height:1.42}
+.qquote{margin:14px 0 0;padding:12px 16px;border-left:3px solid var(--form);background:var(--form-soft);border-radius:0 8px 8px 0;font-family:var(--display);font-size:17px;line-height:1.55}
+.choices{display:grid;gap:10px;margin-top:20px}
+.choice{display:grid;grid-template-columns:32px minmax(0,1fr);gap:14px;align-items:start;width:100%;text-align:left;padding:12px 14px;border:1px solid var(--rule);border-radius:10px;background:var(--sheet);color:var(--ink);font-size:16px;line-height:1.45;cursor:pointer;transition:border-color .15s,background .15s,opacity .2s}
+.choice:hover:not(:disabled){border-color:var(--form);background:var(--form-soft)}
+.choice:disabled{cursor:default;color:var(--ink)}
+.bubble{width:30px;height:30px;border-radius:50%;border:1.5px solid var(--form);display:grid;place-items:center;font-family:var(--mono);font-size:13px;font-weight:600;color:var(--form);flex:none}
+.ctext{padding-top:3px;min-width:0}
+.choice.picked{border-color:var(--graphite)}
+.choice.picked .bubble{background:var(--graphite);border-color:var(--graphite);color:var(--on-fill)}
+.choice.right{border-color:var(--good);background:var(--good-soft)}
+.choice.right .bubble{background:var(--good);border-color:var(--good);color:var(--on-fill)}
+.choice.wrong{border-color:var(--bad);background:var(--bad-soft);animation:shake .35s}
+.choice.wrong .bubble{background:var(--bad);border-color:var(--bad);color:var(--on-fill)}
+.choice.dim{opacity:.55}
+.feedback{margin-top:16px;padding:14px 16px;border-radius:10px;border:1px solid var(--rule);display:grid;gap:6px}
+.feedback.ok{border-color:var(--good);background:var(--good-soft)}
+.feedback.no{border-color:var(--bad);background:var(--bad-soft)}
+.fb-title{font-weight:700;font-size:17px}
+.feedback.ok .fb-title{color:var(--good)} .feedback.no .fb-title{color:var(--bad)}
+.keyterm{color:var(--muted);font-size:15px}
+.keyterm b{color:var(--ink);font-weight:600}
+.qactions{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px}
+.quiz-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.hint{color:var(--muted);font-size:13px}
+@media (hover:none){.hint{display:none}}
+
+/* ---------- results ---------- */
+.results{display:grid;gap:16px;max-width:820px;margin:0 auto}
+.res-head{display:grid;gap:8px}
+.score-big{font-family:var(--display);font-weight:700;font-size:clamp(48px,8vw,72px);line-height:1}
+.res-title{font-family:var(--display);font-size:24px}
+.res-sub{font-family:var(--mono);font-size:15px;color:var(--muted)}
+.review{display:grid;gap:14px}
+.review-item{border-top:1px solid var(--rule);padding-top:14px;display:grid;gap:8px}
+.review-item:first-child{border-top:0;padding-top:0}
+.review-item h4{font-size:16px;font-weight:600;line-height:1.45}
+.ans{display:grid;grid-template-columns:26px minmax(0,1fr);gap:10px;align-items:start;font-size:15px}
+.ans .dot{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:11px;color:var(--on-fill)}
+.ans.bad .dot{background:var(--bad)} .ans.good .dot{background:var(--good)}
+.x{color:var(--muted);font-size:15px}
+
+/* ---------- flashcards ---------- */
+.cards{display:grid;gap:16px;max-width:780px;margin:0 auto}
+.flash{perspective:1400px;border:0;background:none;padding:0;cursor:pointer;text-align:left;display:block;width:100%}
+.flash-inner{display:grid;transition:transform .5s cubic-bezier(.2,.7,.2,1);transform-style:preserve-3d}
+.flash.flipped .flash-inner{transform:rotateY(180deg)}
+.face{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;min-height:290px;position:relative;background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);padding:26px 26px 22px clamp(40px,5vw,56px);display:flex;flex-direction:column;justify-content:center;gap:12px}
+.face.back{transform:rotateY(180deg)}
+.term-big{font-family:var(--display);font-size:clamp(26px,4.4vw,38px);line-height:1.12}
+.def-big{font-size:clamp(17px,2.2vw,20px);line-height:1.55}
+.face .ex{color:var(--muted);font-size:15px}
+.flip-hint{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:auto}
+.card-nav{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.card-count{font-family:var(--mono);font-size:14px;color:var(--muted)}
+.sortbtns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tally{display:flex;gap:6px 16px;flex-wrap:wrap}
+
+/* ---------- match ---------- */
+.game{display:grid;gap:16px;max-width:960px;margin:0 auto}
+.game-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px}
+.game-title{font-family:var(--display);font-size:clamp(22px,3.2vw,28px);margin-top:4px}
+.match-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.mcol{display:grid;gap:8px;align-content:start}
+.mcol-h{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.tile{min-height:62px;padding:10px 12px;border:1px solid var(--rule);border-radius:10px;background:var(--sheet);font-size:15px;line-height:1.35;text-align:left;cursor:pointer}
+.tile.term{font-family:var(--display);font-weight:700}
+.tile:hover:not(:disabled){border-color:var(--form)}
+.tile.sel{border-color:var(--form);background:var(--form-soft);box-shadow:inset 0 0 0 1px var(--form)}
+.tile.matched{border-color:var(--good);background:var(--good-soft);color:var(--good);cursor:default}
+.tile.miss{border-color:var(--bad);background:var(--bad-soft);animation:shake .35s}
+.result-banner{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;border-color:var(--good);background:var(--good-soft)}
+.result-banner b{font-family:var(--display);font-size:20px}
+@media (max-width:520px){.tile{font-size:13.5px;padding:8px 10px}}
+
+/* ---------- lightning ---------- */
+.tbar{height:10px;border-radius:999px;background:var(--form-soft);overflow:hidden}
+.tbar>span{display:block;height:100%;background:var(--form)}
+.lgrid{display:grid;gap:10px;margin-top:18px}
+@media (min-width:700px){.lgrid{grid-template-columns:1fr 1fr}}
+.lprompt{font-family:var(--display);font-size:clamp(24px,3.6vw,32px);margin-top:6px}
+.lquote{font-family:var(--display);font-size:clamp(18px,2.4vw,21px);line-height:1.5;margin-top:6px}
+.tleft{font-family:var(--mono);font-size:18px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+
+/* ---------- sort ---------- */
+.tray{display:flex;flex-wrap:wrap;gap:8px;padding:14px;border:1.5px dashed var(--rule);border-radius:var(--r);min-height:64px}
+.item{padding:8px 12px;border-radius:8px;border:1px solid var(--rule);background:var(--sheet);font-size:15px;cursor:grab;text-align:left;line-height:1.3}
+.item:hover{border-color:var(--form)}
+.item.sel{border-color:var(--form);background:var(--form-soft);box-shadow:inset 0 0 0 1px var(--form)}
+.item.missed{border-style:dashed}
+.shake{animation:shake .35s}
+.select-hint{min-height:24px;font-size:15px;color:var(--form-strong);font-weight:500}
+.buckets{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.bucket{display:flex;flex-direction:column;gap:6px;text-align:left;padding:12px;min-height:140px;border-radius:var(--r);border:1.5px solid var(--rule);background:var(--sheet);cursor:pointer}
+.bucket h4{font-family:var(--display);font-size:16px}
+.bucket.armed{border-color:var(--form)}
+.bucket.over{background:var(--form-soft)}
+.placed{font-size:13.5px;padding:5px 9px;border-radius:6px;background:var(--good-soft);border:1px solid var(--good);line-height:1.3}
+.placed.late{border-style:dashed}
+
+/* ---------- timeline ---------- */
+.tl-list{display:grid;gap:10px}
+.tl-card{display:grid;grid-template-columns:32px minmax(0,1fr) auto;gap:14px;align-items:center;width:100%;text-align:left;padding:12px 14px;border:1px solid var(--rule);border-radius:10px;background:var(--sheet);font-size:16px;cursor:pointer}
+button.tl-card:hover{border-color:var(--form)}
+.tl-card .tl-n{width:30px;height:30px;border-radius:50%;border:1.5px solid var(--form);display:grid;place-items:center;font-family:var(--mono);font-size:13px;font-weight:600;color:var(--form)}
+.tl-card.picked .tl-n{background:var(--graphite);border-color:var(--graphite);color:var(--on-fill)}
+.tl-card.good{border-color:var(--good);background:var(--good-soft);cursor:default}
+.tl-card.good .tl-n{background:var(--good);border-color:var(--good);color:var(--on-fill)}
+.tl-card.bad{border-color:var(--bad);background:var(--bad-soft);cursor:default}
+.tl-card.bad .tl-n{background:var(--bad);border-color:var(--bad);color:var(--on-fill)}
+.tl-year{font-family:var(--mono);font-size:16px;font-weight:600}
+
+/* ---------- study guide ---------- */
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tab{min-height:40px;padding:8px 16px;border-radius:8px;border:1px solid var(--rule);background:var(--sheet);font-weight:600;font-size:15px;cursor:pointer;color:var(--muted)}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+.search{width:100%;min-height:46px;padding:10px 14px;border-radius:8px;border:1px solid var(--rule);background:var(--sheet);color:var(--ink);font:inherit}
+.search:focus{outline:2px solid var(--form);outline-offset:1px}
+.ggroup{display:grid;gap:12px;margin-top:24px}
+.ghead{font-family:var(--display);font-size:22px}
+.gitems{display:grid;gap:12px}
+@media (min-width:800px){.gitems{grid-template-columns:1fr 1fr}}
+.gentry{padding:16px 18px;border:1px solid var(--rule);border-radius:var(--r);background:var(--sheet);display:grid;gap:8px;align-content:start;min-width:0}
+.gentry-top{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;justify-content:space-between}
+.gentry h4{font-family:var(--display);font-size:18px}
+.gentry p{font-size:15px}
+.gex{color:var(--muted)} .gex b{color:var(--form-strong);font-weight:600}
+.gentry .btn{justify-self:start}
+.jump{cursor:pointer;min-height:34px}
+.jump:hover{border-color:var(--form);color:var(--ink)}
+.tsec{display:grid;gap:8px;margin-top:28px;scroll-margin-top:16px}
+.tsec h3{font-family:var(--display);font-size:21px}
+.note{color:var(--muted);font-size:15px}
+.tablewrap{overflow-x:auto;border:1px solid var(--rule);border-radius:var(--r);background:var(--sheet)}
+table{border-collapse:collapse;width:100%;min-width:600px;font-size:15px}
+th,td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--rule)}
+tr:last-child th,tr:last-child td{border-bottom:0}
+thead th{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--form-strong);background:var(--form-soft)}
+tbody th{font-family:var(--display);font-weight:700}
+.empty{text-align:center;color:var(--muted)}
+
+/* ---------- overlays ---------- */
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50}
+.toasts{position:fixed;left:50%;transform:translateX(-50%);top:calc(env(safe-area-inset-top,0px) + 16px);z-index:60;display:grid;gap:8px;width:min(380px,calc(100% - 32px));pointer-events:none}
+.toast{background:var(--sheet);border:1px solid var(--form);border-radius:10px;padding:10px 14px;box-shadow:0 10px 30px -12px rgba(0,0,0,.35);display:grid;gap:2px;animation:rise .3s ease-out}
+.toast b{font-weight:700}
+.toast span{color:var(--muted);font-size:14px}
+.toast.out{opacity:0;transition:opacity .3s}
+.floater{position:fixed;transform:translate(-50%,-50%);font-family:var(--mono);font-weight:600;font-size:18px;color:var(--bad);pointer-events:none;z-index:55;animation:floatUp 1s ease-out forwards}
+.enter{animation:rise .25s ease-out}
+
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes floatUp{0%{opacity:0;transform:translate(-50%,-30%)}20%{opacity:1;transform:translate(-50%,-70%)}100%{opacity:0;transform:translate(-50%,-180%)}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <button class="brand" id="brand" type="button" aria-label="Go to the home screen">
+      <span class="seal" aria-hidden="true">U1</span>
+      <span><span class="brand-name">Unit 1 Review</span><span class="brand-sub">AP U.S. Government</span></span>
+    </button>
+    <button class="btn small" id="nav-home" type="button" hidden>All study modes</button>
+  </div>
+</header>
+<main class="wrap" id="view"></main>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script>
+'use strict';
+/* =========================================================
+   CONTENT — from the Unit 1 Review sheet (Chapters 1–3)
+   ========================================================= */
+const CH={1:'Founding Principles',2:'The Constitution',3:'Federalism'};
+const CAT={person:'Thinkers & founders',doc:'Founding documents',case:'Supreme Court cases',event:'Convention & compromises',concept:'Key concepts'};
+
+const TERMS=[
+/* ---- Chapter 1 ---- */
+{k:'hobbes',ch:1,cat:'person',n:`Thomas Hobbes`,d:`English philosopher who wrote Leviathan (1651). He argued that life without government is “nasty, brutish, and short,” so people agree to give up freedom to a strong ruler in exchange for order and safety.`,s:`Strong ruler needed; life without government is “nasty, brutish, short”`,ex:`A social contract thinker who favored absolute power for security. Contrast with Locke, who said people can overthrow a bad government.`},
+{k:'locke',ch:1,cat:'person',n:`John Locke`,d:`English philosopher who wrote Two Treatises of Government (1689). He argued people have natural rights to life, liberty, and property, government exists by consent of the governed to protect those rights, and people may overthrow a government that violates them.`,s:`Natural rights to life, liberty, property; consent of the governed`,ex:`Jefferson borrowed Locke’s ideas for the Declaration of Independence.`},
+{k:'montesquieu',ch:1,cat:'person',n:`Baron de Montesquieu`,d:`French philosopher who wrote The Spirit of the Laws (1748). He argued that liberty is safest when government power is separated into legislative, executive, and judicial branches.`,s:`Separation of powers into three branches`,ex:`His ideas shaped Articles I–III and the system of checks and balances.`},
+{k:'rousseau',ch:1,cat:'person',n:`Jean-Jacques Rousseau`,d:`French philosopher who wrote The Social Contract (1762). He argued that legitimate government rests on an agreement among the people and should follow the “general will.”`,s:`Social contract; government follows the “general will”`,ex:`Linked to popular sovereignty and participatory democracy.`},
+{k:'adams',ch:1,cat:'person',n:`John Adams`,d:`Massachusetts patriot who served on the committee that drafted the Declaration of Independence, wrote Thoughts on Government in support of separated powers, and became the first vice president and second president.`,s:`Helped draft the Declaration; second president`,ex:`He was serving as minister to Britain in 1787, so he missed the Constitutional Convention.`},
+{k:'franklin',ch:1,cat:'person',n:`Benjamin Franklin`,d:`Printer, scientist, and diplomat who helped draft the Declaration of Independence and was the oldest delegate (81) at the Constitutional Convention, where he urged delegates to compromise.`,s:`Oldest Convention delegate; urged compromise`,ex:`He signed the Declaration, the 1783 Treaty of Paris, and the Constitution.`},
+{k:'hamilton',ch:1,cat:'person',n:`Alexander Hamilton`,d:`New York Federalist who wrote most of the Federalist Papers (including Nos. 70 and 78), favored a strong national government, and became the first Secretary of the Treasury.`,s:`Wrote most Federalist Papers; first Treasury Secretary`,ex:`His case that the Constitution allowed a national bank was later backed in McCulloch v. Maryland (1819).`},
+{k:'jefferson',ch:1,cat:'person',n:`Thomas Jefferson`,d:`Virginian who was the main author of the Declaration of Independence. He was in France during the Constitutional Convention and later became the third president.`,s:`Main author of the Declaration of Independence`,ex:`Favored limited national power and opposed Hamilton’s national bank.`},
+{k:'madison',ch:1,cat:'person',n:`James Madison`,d:`Virginian called the “Father of the Constitution.” He drafted the Virginia Plan, co-wrote the Federalist Papers (including Nos. 10, 39, and 51), and wrote the amendments that became the Bill of Rights.`,s:`“Father of the Constitution”; wrote Federalist 10 and 51`,ex:`He is also the Madison in Marbury v. Madison: as Secretary of State, he withheld Marbury’s commission.`},
+{k:'washington',ch:1,cat:'person',n:`George Washington`,d:`Commander of the Continental Army who presided over the Constitutional Convention and became the first president. His support gave the new Constitution credibility.`,s:`Presided over the Convention; first president`,ex:`Warned against political parties (factions) in his Farewell Address (1796).`},
+{k:'popsov',ch:1,cat:'concept',n:`Popular sovereignty`,d:`The principle that government gets its authority from the people, who are the ultimate source of political power.`,s:`Government’s power comes from the people`,ex:`“We the People” in the Preamble; “consent of the governed” in the Declaration.`},
+{k:'limited',ch:1,cat:'concept',n:`Limited government`,d:`The principle that government’s powers are restricted by law, usually a written constitution, in order to protect individual rights.`,s:`Government power is restricted by law to protect rights`,ex:`Seen in the Bill of Rights, separation of powers, and checks and balances.`},
+{k:'declaration',ch:1,cat:'doc',n:`Declaration of Independence`,d:`1776 document, written mainly by Thomas Jefferson, that listed grievances against King George III and declared that people have unalienable rights and may alter or abolish a government that violates them.`,s:`1776: natural rights, consent of the governed, right to revolt`,ex:`“Life, liberty, and the pursuit of happiness” adapts Locke’s natural rights.`},
+{k:'constitution',ch:1,cat:'doc',n:`U.S. Constitution`,d:`Plan of government written in 1787 and ratified in 1788 that created a federal republic with three branches, separation of powers, checks and balances, and federalism. It is the supreme law of the land.`,s:`1787 plan of government; supreme law of the land`,ex:`Replaced the Articles of Confederation and has been amended 27 times.`},
+{k:'republic',ch:1,cat:'concept',av:['repdem'],n:`Republicanism`,d:`A system of government in which the people hold power and elect representatives to make decisions for them, instead of being ruled by a monarch.`,s:`People elect representatives; no monarch`,ex:`The framers chose a republic over direct democracy to filter public passions.`},
+{k:'repdem',ch:1,cat:'concept',av:['republic'],n:`Representative democracy`,d:`A form of government in which citizens elect officials to make laws and policies on their behalf.`,s:`Citizens elect officials to make laws for them`,ex:`Members of Congress represent the voters in their districts and states.`},
+{k:'elite',ch:1,cat:'concept',n:`Elite democracy`,d:`A model of democracy that limits ordinary citizens’ participation and relies on well-educated, often wealthy leaders to make decisions.`,s:`Educated leaders decide; limited citizen participation`,ex:`The Electoral College, and senators originally chosen by state legislatures.`},
+{k:'participatory',ch:1,cat:'concept',n:`Participatory democracy`,d:`A model of democracy that emphasizes broad, direct participation by citizens in politics and civil society.`,s:`Broad, direct citizen participation`,ex:`Initiatives, referendums, town halls, and primary elections.`},
+{k:'pluralist',ch:1,cat:'concept',n:`Pluralist democracy`,d:`A model of democracy in which many organized groups compete to influence policy and no single group dominates.`,s:`Many groups compete for influence`,ex:`Interest groups like the AARP, the NRA, and labor unions lobbying Congress.`},
+{k:'factions',ch:1,cat:'concept',n:`Factions`,d:`Groups of citizens united by a shared interest or passion that is adverse to the rights of others or the interests of the whole community, as Madison defined them.`,s:`Groups whose shared interest may harm others’ rights`,ex:`Federalist No. 10 argues a large republic controls their effects.`},
+{k:'initiative',ch:1,cat:'concept',n:`Initiative`,d:`A process in some states that lets citizens propose a law or constitutional amendment by petition and place it on the ballot for voters to decide.`,s:`Citizens petition to put a proposed law on the ballot`,ex:`Citizens start it. In a referendum, the legislature sends a measure to voters.`},
+{k:'referendum',ch:1,cat:'concept',n:`Referendum`,d:`A process in which a measure passed by a state legislature is sent to the voters to approve or reject.`,s:`Voters approve or reject a measure from the legislature`,ex:`Common for state constitutional amendments and bond measures.`},
+{k:'antifed',ch:1,cat:'concept',n:`Anti-Federalists`,d:`Opponents of ratifying the Constitution who feared a strong national government would threaten individual liberty and states’ rights, and who demanded a bill of rights.`,s:`Opposed the Constitution; feared a strong central government`,ex:`Brutus, Patrick Henry, and George Mason. Their pressure led to the Bill of Rights.`},
+{k:'fed',ch:1,cat:'concept',n:`Federalists`,d:`Supporters of ratifying the Constitution who argued that a stronger national government was needed to fix the weaknesses of the Articles of Confederation.`,s:`Supported the Constitution and a stronger national government`,ex:`Hamilton, Madison, and John Jay wrote the Federalist Papers as “Publius.”`},
+{k:'brutus1',ch:1,cat:'doc',n:`Brutus No. 1`,d:`1787 Anti-Federalist essay arguing that a large republic cannot represent the people well and that the necessary and proper and supremacy clauses would let the national government swallow up the states.`,s:`Anti-Federalist: republic too big, national government too strong`,ex:`Favored a small, decentralized republic. Most likely written by Robert Yates.`},
+{k:'fed10',ch:1,cat:'doc',n:`Federalist No. 10`,d:`1787 essay by Madison arguing that the causes of faction cannot be removed without destroying liberty, so a large republic with many competing factions is the best way to control their effects.`,s:`Madison: a large republic controls the effects of factions`,ex:`Supports pluralism and counters the Anti-Federalist claim that only small republics work.`},
+{k:'gettysburg',ch:1,cat:'doc',n:`Gettysburg Address`,d:`Lincoln’s 1863 speech at a Civil War cemetery that tied the war to the Declaration’s promise of equality and called for “government of the people, by the people, for the people.”`,s:`Lincoln, 1863: government of, by, and for the people`,ex:`A restatement of popular sovereignty and the ideals of 1776.`},
+/* ---- Chapter 2 ---- */
+{k:'aoc',ch:2,cat:'doc',n:`Articles of Confederation`,d:`The first U.S. constitution (1781–1789). It created a weak national government with a one-house Congress, no executive or national courts, no power to tax or regulate trade, and amendments that required all 13 states.`,s:`First constitution; weak national government, strong states`,ex:`Shays’ Rebellion exposed its weaknesses.`},
+{k:'shays',ch:2,cat:'event',n:`Shays’ Rebellion`,d:`1786–1787 uprising of indebted Massachusetts farmers, led by Daniel Shays, against taxes and farm foreclosures. The national government could not respond, which showed the weakness of the Articles.`,s:`Farmers’ revolt that exposed the Articles’ weakness`,ex:`Helped convince leaders to call the Constitutional Convention.`},
+{k:'bicameral',ch:2,cat:'concept',n:`Bicameral`,d:`Describes a legislature made up of two chambers, such as the House of Representatives and the Senate.`,s:`Two-chamber legislature`,ex:`Created by the Great Compromise. The Congress under the Articles had only one chamber.`},
+{k:'ratification',ch:2,cat:'concept',n:`Ratification`,d:`Formal approval of a document or amendment. Article VII required 9 of the 13 states to approve the Constitution in state conventions.`,s:`Formal approval; the Constitution needed 9 of 13 states`,ex:`New Hampshire became the ninth state in June 1788.`},
+{k:'articles13',ch:2,cat:'concept',av:['separation'],n:`Articles I–III`,d:`The first three articles of the Constitution, which create and describe the legislative branch (Congress), the executive branch (the president), and the judicial branch (the Supreme Court).`,s:`I = Congress, II = President, III = Courts`,ex:`Article I is the longest, showing the framers saw Congress as the central branch.`},
+{k:'articleV',ch:2,cat:'concept',n:`Article V`,d:`The part of the Constitution that sets the amendment process: proposal by two-thirds of both houses of Congress (or a convention called by two-thirds of the states) and ratification by three-fourths of the states.`,s:`Amendments: propose by 2/3, ratify by 3/4`,ex:`Only 27 amendments have passed because the bar is so high.`},
+{k:'convention',ch:2,cat:'event',n:`Constitutional Convention`,d:`1787 meeting in Philadelphia where delegates, sent to revise the Articles of Confederation, instead wrote a new constitution.`,s:`1787 Philadelphia meeting that wrote the Constitution`,ex:`Washington presided, 55 delegates attended, and Rhode Island sent no one.`},
+{k:'bor',ch:2,cat:'doc',n:`Bill of Rights`,d:`The first ten amendments to the Constitution, ratified in 1791, which protect individual liberties such as speech, religion, and the rights of the accused.`,s:`First 10 amendments; protect individual liberties (1791)`,ex:`Promised to win over Anti-Federalists and drafted by Madison.`},
+{k:'virginia',ch:2,cat:'event',n:`Virginia Plan`,d:`Madison’s proposal at the Convention for a strong national government with three branches and a two-house legislature in which representation was based on population.`,s:`Two houses, representation by population; favored large states`,ex:`Large states like Virginia and Pennsylvania backed it.`},
+{k:'nj',ch:2,cat:'event',n:`New Jersey Plan`,d:`William Paterson’s proposal for a one-house legislature in which each state had equal representation, keeping much of the Articles’ structure.`,s:`One house, equal votes per state; favored small states`,ex:`Small states like Delaware and New Jersey backed it.`},
+{k:'great',ch:2,cat:'event',n:`Great Compromise`,d:`Agreement at the Convention, also called the Connecticut Compromise, that created a bicameral Congress with a House based on population and a Senate with two members per state.`,s:`House by population + Senate equal (2 per state)`,ex:`Proposed by Roger Sherman of Connecticut.`},
+{k:'electoral',ch:2,cat:'event',n:`Electoral College`,d:`The system for choosing the president in which each state gets electors equal to its House members plus its two senators. It was a compromise between election by Congress and by popular vote.`,s:`Electors (House seats + 2 senators) choose the president`,ex:`An example of elite democracy and federalism. 270 of 538 electoral votes wins.`},
+{k:'threefifths',ch:2,cat:'event',n:`Three-Fifths Compromise`,d:`Convention agreement that counted three-fifths of the enslaved population when deciding a state’s representation in the House and its share of direct taxes.`,s:`Enslaved people counted as 3/5 for representation and taxes`,ex:`Gave Southern states more House seats. The Fourteenth Amendment replaced it.`},
+{k:'checks',ch:2,cat:'concept',n:`Checks and balances`,d:`The system that lets each branch limit the powers of the other branches, so no branch becomes too powerful.`,s:`Each branch can limit the others`,ex:`Veto, veto override, judicial review, Senate confirmation, and impeachment.`},
+{k:'separation',ch:2,cat:'concept',av:['articles13'],n:`Separation of powers`,d:`The division of government’s power among the legislative, executive, and judicial branches, each with its own job: making, enforcing, and interpreting laws.`,s:`Split power among three branches with different jobs`,ex:`Based on Montesquieu and defended in Federalist No. 51.`},
+{k:'advice',ch:2,cat:'concept',n:`Advice and consent`,d:`The Senate’s constitutional power to approve treaties (by a two-thirds vote) and the president’s appointments of judges, ambassadors, and Cabinet officers (by a majority).`,s:`Senate approves treaties (2/3) and appointments`,ex:`A check on the executive and, indirectly, on the judiciary.`},
+{k:'impeach',ch:2,cat:'concept',n:`Impeachment`,d:`The process of formally charging a federal official with wrongdoing. The House brings charges by majority vote, and the Senate holds the trial, where two-thirds is needed to remove.`,s:`House charges (majority); Senate tries (2/3 to remove)`,ex:`Grounds: “treason, bribery, or other high crimes and misdemeanors.”`},
+{k:'veto',ch:2,cat:'concept',n:`Veto`,d:`The president’s power to reject a bill passed by Congress. Congress can override it with a two-thirds vote in both houses.`,s:`President rejects a bill; 2/3 of both houses can override`,ex:`A key executive check on the legislature.`},
+{k:'fed51',ch:2,cat:'doc',n:`Federalist No. 51`,d:`1788 essay by Madison arguing that separation of powers and checks and balances, along with federalism, protect liberty because “ambition must be made to counteract ambition.”`,s:`Madison: “ambition must counteract ambition”`,ex:`Also: “If men were angels, no government would be necessary.”`},
+{k:'fed70',ch:2,cat:'doc',n:`Federalist No. 70`,d:`1788 essay by Hamilton arguing for a single, energetic executive who can act quickly and be held accountable.`,s:`Hamilton: one energetic executive`,ex:`Still used to defend strong presidential power.`},
+{k:'fed78',ch:2,cat:'doc',n:`Federalist No. 78`,d:`1788 essay by Hamilton arguing that the judiciary is the “least dangerous” branch, defending life terms for judges and the courts’ power to strike down unconstitutional laws.`,s:`Hamilton: courts “least dangerous”; judicial review; life terms`,ex:`Its case for judicial review was put into practice in Marbury v. Madison.`},
+{k:'marbury',ch:2,cat:'case',n:`Marbury v. Madison (1803)`,d:`Supreme Court case in which Chief Justice John Marshall struck down part of the Judiciary Act of 1789, establishing the Court’s power of judicial review.`,s:`1803: established judicial review`,ex:`Made the judiciary a co-equal branch able to check Congress and the president.`},
+/* ---- Chapter 3 ---- */
+{k:'federalism',ch:3,cat:'concept',av:['dual','cooperative'],n:`Federalism`,d:`A system in which power is divided and shared between a national government and state governments.`,s:`Power divided between national and state governments`,ex:`Compare a unitary system (power at the center) and a confederation (power with the states).`},
+{k:'delegated',ch:3,cat:'concept',av:['enumerated'],n:`Delegated (exclusive) powers`,d:`Powers the Constitution grants only to the national government, such as coining money, declaring war, and making treaties.`,s:`Powers held only by the national government`,ex:`Most are listed in Article I, Section 8.`},
+{k:'reserved',ch:3,cat:'concept',av:['police'],n:`Reserved powers`,d:`Powers not given to the national government or denied to the states, which are kept by the states or the people under the Tenth Amendment.`,s:`Powers kept by the states (10th Amendment)`,ex:`Running elections and schools, issuing licenses, and police powers.`},
+{k:'concurrent',ch:3,cat:'concept',n:`Concurrent powers`,d:`Powers held by both the national and state governments, such as taxing, borrowing money, and setting up courts.`,s:`Powers shared by national and state governments`,ex:`Taxing, borrowing, making and enforcing laws, and establishing courts.`},
+{k:'extradition',ch:3,cat:'concept',n:`Extradition`,d:`The Article IV requirement that a state return a person accused of a crime to the state where the crime was committed.`,s:`States return fugitives to the state of the crime`,ex:`One of the interstate obligations in Article IV.`},
+{k:'ffc',ch:3,cat:'concept',n:`Full faith and credit`,d:`The Article IV clause requiring states to recognize the public acts, records, and court rulings of other states.`,s:`States honor other states’ records, licenses, and rulings`,ex:`Marriages, divorces, wills, and court judgments carry across state lines.`},
+{k:'pi',ch:3,cat:'concept',n:`Privileges and immunities`,d:`The Article IV clause that prevents states from unreasonably discriminating against citizens of other states.`,s:`States can’t unfairly discriminate against out-of-staters`,ex:`Visitors can use a state’s courts and buy property there. States may still charge higher out-of-state tuition.`},
+{k:'police',ch:3,cat:'concept',av:['reserved'],n:`Police powers`,d:`The reserved power of states to pass laws protecting the health, safety, welfare, and morals of their residents.`,s:`State power over health, safety, welfare, morals`,ex:`Speed limits, seat-belt laws, and restaurant inspections.`},
+{k:'supremacy',ch:3,cat:'concept',n:`Supremacy clause`,d:`The Article VI clause making the Constitution, federal laws, and treaties the supreme law of the land, so federal law wins when it conflicts with state law.`,s:`Article VI: federal law beats conflicting state law`,ex:`Key to the ruling in McCulloch v. Maryland.`},
+{k:'block',ch:3,cat:'concept',av:['grantinaid','fiscal'],n:`Block grants`,d:`Federal money given to states for a broad purpose, such as community development, with few restrictions on how it is spent.`,s:`Federal money for broad purposes; few strings`,ex:`Governors prefer them. Example: TANF welfare funds.`},
+{k:'categorical',ch:3,cat:'concept',av:['grantinaid','fiscal'],n:`Categorical grants`,d:`Federal money given to states for a specific purpose, with strict conditions states must meet to receive it.`,s:`Federal money for a specific purpose with strict strings`,ex:`Highway funds tied to a drinking age of 21 (South Dakota v. Dole, 1987).`},
+{k:'cooperative',ch:3,cat:'concept',av:['federalism'],n:`Cooperative federalism`,d:`A form of federalism in which national and state governments share responsibilities and work together on policies; often called “marble cake” federalism.`,s:`“Marble cake”: levels share policy responsibilities`,ex:`Grew with the New Deal in the 1930s. Example: Medicaid.`},
+{k:'dual',ch:3,cat:'concept',av:['federalism'],n:`Dual federalism`,d:`A form of federalism in which national and state governments have separate, clearly defined areas of power; often called “layer cake” federalism.`,s:`“Layer cake”: separate national and state spheres`,ex:`The main approach from the founding until the New Deal.`},
+{k:'fiscal',ch:3,cat:'concept',av:['grantinaid','block','categorical','revenue'],n:`Fiscal federalism`,d:`The national government’s use of spending, grants, and conditions on funds to influence state and local policy.`,s:`Using federal money to steer state policy`,ex:`Grants-in-aid are its main tool.`},
+{k:'grantinaid',ch:3,cat:'concept',av:['fiscal','block','categorical','revenue'],n:`Grant-in-aid programs`,d:`Programs through which the national government gives money to state and local governments to pay for services like highways, education, and health care.`,s:`Federal money given to states for programs`,ex:`Categorical grants and block grants are both kinds of grants-in-aid.`},
+{k:'mandates',ch:3,cat:'concept',n:`Mandates`,d:`Requirements the national government places on states. Unfunded mandates require action without providing the money to pay for it.`,s:`Federal requirements on states, often unfunded`,ex:`Americans with Disabilities Act accessibility rules.`},
+{k:'revenue',ch:3,cat:'concept',av:['fiscal','grantinaid'],n:`Revenue sharing`,d:`A program that ran from 1972 to 1986 in which the national government gave money to states and localities with almost no strings attached.`,s:`Federal money with no strings (1972–1986)`,ex:`Started under President Nixon as part of his “New Federalism.”`},
+{k:'fourteenth',ch:3,cat:'doc',n:`Fourteenth Amendment (1868)`,d:`Reconstruction amendment that defines citizenship and forbids states from denying any person due process or equal protection of the laws. Its due process clause is used to apply the Bill of Rights to the states.`,s:`1868: citizenship, due process, equal protection vs. states`,ex:`Used in McDonald v. Chicago to apply the Second Amendment to the states.`},
+{k:'necproper',ch:3,cat:'concept',av:['elastic'],n:`Necessary and proper clause`,d:`The final clause of Article I, Section 8, giving Congress the power to make all laws needed to carry out its listed powers.`,s:`Congress can make laws needed to carry out its powers`,ex:`The basis for implied powers, upheld in McCulloch v. Maryland.`},
+{k:'elastic',ch:3,cat:'concept',av:['necproper'],n:`Elastic clause`,d:`Nickname for the necessary and proper clause, because it lets Congress’s power stretch beyond the powers specifically listed in the Constitution.`,s:`Nickname: lets Congress’s power stretch`,ex:`Anti-Federalists like Brutus feared it would make federal power unlimited.`},
+{k:'enumerated',ch:3,cat:'concept',av:['delegated'],n:`Enumerated powers`,d:`Powers specifically listed in the Constitution, especially Congress’s powers in Article I, Section 8, such as taxing, coining money, and declaring war.`,s:`Powers specifically listed in the Constitution`,ex:`Also called expressed powers.`},
+{k:'implied',ch:3,cat:'concept',n:`Implied powers`,d:`Powers not specifically listed in the Constitution that Congress may use because they are reasonably related to carrying out its listed powers.`,s:`Unlisted powers used to carry out listed ones`,ex:`Creating a national bank (McCulloch v. Maryland).`},
+{k:'commerce',ch:3,cat:'concept',n:`Commerce clause`,d:`The part of Article I, Section 8 giving Congress the power to regulate trade with foreign nations, among the states, and with Native American tribes.`,s:`Congress regulates interstate and foreign trade`,ex:`Used to expand federal power, then limited in United States v. Lopez (1995).`},
+{k:'selective',ch:3,cat:'concept',n:`Selective exclusiveness`,d:`Doctrine from Cooley v. Board of Wardens (1852) holding that Congress alone regulates commerce that needs one national rule, while states may regulate local parts of commerce if Congress has not acted.`,s:`Congress rules national commerce; states may regulate local parts`,ex:`A middle ground between exclusive federal power and shared power over commerce.`},
+{k:'tenth',ch:3,cat:'doc',n:`Tenth Amendment (1791)`,d:`Amendment stating that powers not delegated to the national government, nor prohibited to the states, are reserved to the states or to the people.`,s:`Undelegated powers belong to the states or the people`,ex:`The foundation of reserved powers and states’ rights arguments.`},
+{k:'mcculloch',ch:3,cat:'case',n:`McCulloch v. Maryland (1819)`,d:`Supreme Court case ruling that Congress had the implied power to create a national bank under the necessary and proper clause, and that Maryland could not tax the bank because of the supremacy clause.`,s:`1819: national bank OK (implied powers); states can’t tax it`,ex:`“The power to tax involves the power to destroy.” Expanded national power.`},
+{k:'lopez',ch:3,cat:'case',n:`United States v. Lopez (1995)`,d:`Supreme Court case ruling that Congress exceeded its commerce clause power with the Gun-Free School Zones Act, because carrying a gun near a school is not economic activity.`,s:`1995: gun-free school zone law exceeded commerce power`,ex:`The first limit on the commerce clause in nearly 60 years; strengthened state power.`},
+{k:'mcdonald',ch:3,cat:'case',n:`McDonald v. Chicago (2010)`,d:`Supreme Court case ruling that the Second Amendment right to keep and bear arms applies to state and local governments through the Fourteenth Amendment’s due process clause.`,s:`2010: Second Amendment applies to states via the 14th`,ex:`Struck down Chicago’s handgun ban; an example of selective incorporation.`},
+{k:'fed39',ch:3,cat:'doc',n:`Federalist No. 39`,d:`1788 essay by Madison arguing that the Constitution creates a republic that is partly national and partly federal, drawing its authority from the people.`,s:`Madison: government is partly national, partly federal`,ex:`Defended the Constitution’s mix of state and national power.`}
+];
+const TERM=Object.fromEntries(TERMS.map(t=>[t.k,t]));
+
+/* ---- test-style questions: first choice is correct; order is shuffled at runtime ---- */
+const QS=[], QMAP={}, QN={};
+function q(t,text,c,x){ if(!TERM[t]){console.warn('Unknown term',t);return;} QN[t]=(QN[t]||0)+1; const id=t+'-'+QN[t]; const o={id,t,q:text,c,x}; QS.push(o); QMAP[id]=o; }
+
+/* Chapter 1 */
+q('locke',`Which Enlightenment thinker argued that people have natural rights to life, liberty, and property, and that government exists to protect those rights?`,[`John Locke`,`Thomas Hobbes`,`Baron de Montesquieu`,`Jean-Jacques Rousseau`],`Locke’s Two Treatises of Government (1689) named life, liberty, and property as natural rights. Jefferson adapted the idea in the Declaration.`);
+q('hobbes',`Thomas Hobbes wrote that life without government would be “nasty, brutish, and short.” What did he conclude from this?`,[`People should give up some freedom to a strong ruler in exchange for order and safety`,`Government power should be divided among three separate branches`,`Citizens should vote directly on every law`,`People may overthrow any government whenever they choose`],`In Leviathan (1651), Hobbes argued a powerful sovereign is the only escape from the chaos of the state of nature.`);
+q('hobbes',`How did John Locke’s view of government differ from Thomas Hobbes’s?`,[`Locke believed people may overthrow a government that violates their rights; Hobbes favored a ruler with absolute power`,`Locke supported absolute monarchy; Hobbes supported revolution`,`Locke rejected the idea of a social contract; Hobbes accepted it`,`Locke believed people need no government; Hobbes believed they need a weak one`],`Both were social contract thinkers, but Locke’s contract depends on protecting natural rights, while Hobbes’s ruler keeps power to guarantee order.`);
+q('montesquieu',`The framers’ decision to divide power among legislative, executive, and judicial branches was most directly influenced by`,[`Baron de Montesquieu`,`Thomas Hobbes`,`Jean-Jacques Rousseau`,`the Articles of Confederation`],`Montesquieu’s The Spirit of the Laws (1748) argued that liberty requires separating government’s powers.`);
+q('montesquieu',`According to Montesquieu, liberty is best protected when`,[`government power is separated so no single branch holds too much`,`citizens hand all power to a single monarch`,`every decision follows a popular vote`,`states keep all power and the national government keeps none`],`Montesquieu warned that putting lawmaking, enforcement, and judging in the same hands leads to tyranny.`);
+q('rousseau',`Which thinker argued that legitimate government rests on a social contract that follows the “general will” of the people?`,[`Jean-Jacques Rousseau`,`Baron de Montesquieu`,`Thomas Hobbes`,`Alexander Hamilton`],`Rousseau’s The Social Contract (1762) tied legitimate authority to the general will, an idea linked to popular sovereignty.`);
+q('declaration',`Which passage from the Declaration of Independence most directly reflects John Locke’s ideas?`,[`“Whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it”`,`“The Congress shall have Power To lay and collect Taxes”`,`“Ambition must be made to counteract ambition”`,`“The judiciary … will always be the least dangerous to the political rights of the Constitution”`],`Locke argued people may replace a government that violates their natural rights. The other lines come from the Constitution, Federalist No. 51, and Federalist No. 78.`);
+q('declaration',`The long list of complaints against King George III in the Declaration of Independence was mainly meant to`,[`show the king had violated the colonists’ rights, which justified independence`,`set up the structure of the new national government`,`explain how the Articles of Confederation would work`,`persuade the states to ratify the Constitution`],`Following Locke, the grievances prove the government broke the social contract, giving the people the right to break away.`);
+q('popsov',`The opening words of the Constitution, “We the People,” best reflect which principle?`,[`Popular sovereignty`,`Federalism`,`Separation of powers`,`Judicial review`],`Popular sovereignty means the government’s authority comes from the people.`);
+q('popsov',`The Declaration says governments derive “their just powers from the consent of the governed.” This idea is best described as`,[`popular sovereignty`,`checks and balances`,`federalism`,`elite democracy`],`Consent of the governed is the core of popular sovereignty: the people are the source of legitimate power.`);
+q('limited',`The Bill of Rights is the clearest example of which founding principle?`,[`Limited government`,`Popular sovereignty`,`Elite democracy`,`Dual federalism`],`The Bill of Rights lists things government may not do, which limits its power to protect individual rights.`);
+q('limited',`Which statement best reflects the principle of limited government?`,[`Government may act only through powers granted by a written constitution`,`The president is chosen by the Electoral College`,`States receive grants from the national government`,`Each state has two senators`],`Limited government means government has only the powers the people grant it, and must respect individual rights.`);
+q('republic',`In a republic, citizens`,[`elect representatives who make laws on their behalf`,`vote directly on every law`,`inherit political power through their families`,`give all power to one ruler for protection`],`A republic is government by elected representatives, not by a monarch or by all citizens directly.`);
+q('republic',`The framers chose a republic over a direct democracy mainly because they`,[`feared a passionate majority could threaten minority rights`,`wanted the British king to keep some authority`,`believed only the states should make laws`,`wanted citizens to vote on every issue`],`Madison argued in Federalist No. 10 that elected representatives “refine and enlarge the public views,” filtering majority passions.`);
+q('repdem',`Which statement best describes representative democracy?`,[`Citizens elect officials to make laws and policies for them`,`Citizens make all laws themselves in public meetings`,`A small group rules without elections`,`A monarch rules with advice from nobles`],`In a representative democracy, voters choose officials who govern on their behalf, like members of Congress.`);
+q('elite',`Which feature of the original Constitution best reflects the elite model of democracy?`,[`The Electoral College chooses the president`,`Citizens can propose state laws through initiatives`,`Interest groups compete to influence Congress`,`House members face the voters every two years`],`The Electoral College, and senators first chosen by state legislatures, put a layer of elites between voters and power.`);
+q('elite',`A supporter of elite democracy would most likely favor`,[`leaving major decisions to educated, well-informed leaders`,`letting citizens vote directly on all laws`,`letting interest groups compete to shape policy`,`expanding ballot initiatives in every state`],`Elite democracy limits ordinary citizens’ role and trusts a smaller, better-informed group to decide.`);
+q('pluralist',`The AARP, the National Rifle Association, and the Sierra Club all lobby Congress, and no single group always wins. This best shows which model of democracy?`,[`Pluralist democracy`,`Elite democracy`,`Participatory democracy`,`Direct democracy`],`Pluralist democracy: many organized groups compete for influence, and none dominates.`);
+q('pluralist',`Madison’s claim in Federalist No. 10 that many competing factions in a large republic will check one another is most closely tied to which model of democracy?`,[`Pluralist democracy`,`Elite democracy`,`Participatory democracy`,`Direct democracy`],`Competition among many groups is the heart of pluralism.`);
+q('participatory',`A state lets citizens gather signatures to put a proposed law on the ballot. This best reflects which model of democracy?`,[`Participatory democracy`,`Elite democracy`,`Pluralist democracy`,`Oligarchy`],`Initiatives let ordinary citizens take part directly in lawmaking, the mark of participatory democracy.`);
+q('participatory',`A supporter of participatory democracy would most likely favor`,[`giving citizens more chances to vote directly on state laws`,`keeping the Electoral College`,`having state legislatures choose U.S. senators`,`limiting voting to property owners`],`Participatory democracy values broad, direct involvement by citizens.`);
+q('initiative',`Which of the following best describes an initiative?`,[`Citizens propose a law by petition, and voters decide on it`,`The state legislature sends a law it passed to voters for approval`,`Voters remove an elected official before the term ends`,`The Senate approves a treaty by a two-thirds vote`],`An initiative starts with citizens. A referendum starts with the legislature, and removing an official early is a recall.`);
+q('referendum',`A state legislature passes a bond measure, but it only takes effect if voters approve it at the next election. This process is a`,[`referendum`,`initiative`,`recall`,`filibuster`],`In a referendum, the legislature refers a measure to the voters to approve or reject.`);
+q('factions',`In Federalist No. 10, James Madison defined factions as`,[`groups of citizens united by an interest that is adverse to the rights of others or the good of the community`,`branches of government that check one another`,`states that refused to ratify the Constitution`,`political parties formed after the Civil War`],`Madison saw factions as a natural result of liberty and human nature, and most dangerous when they become a majority.`);
+q('fed10',`According to Federalist No. 10, the best way to control the effects of factions is to`,[`create a large republic with so many factions that no single one can dominate`,`remove the causes of faction by limiting liberty`,`give each state equal power in a single legislature`,`let citizens vote directly on every law`],`Madison rejected removing the causes of faction (that would destroy liberty) and argued a large republic controls the effects.`);
+q('fed10',`Madison wrote that “the latent causes of faction are thus sown in the nature of man.” What did he conclude?`,[`Since factions cannot be removed without destroying liberty, government must control their effects`,`Government should outlaw political groups`,`Pure democracy is the best cure for faction`,`Factions appear only in small states`],`Because faction comes from human nature, the cure is to control its effects through a large representative republic.`);
+q('fed10',`Based on Federalist No. 10, Madison would most likely support`,[`a national government that represents a large and diverse population`,`small, independent city-states`,`banning interest groups and political parties`,`towns making every law by direct vote`],`Madison argued a large, diverse republic makes it hard for any one faction to form a majority.`);
+q('brutus1',`Brutus No. 1 argued that`,[`a republic as large as the United States could not represent the people, and the national government would overpower the states`,`a single executive was needed to bring energy to government`,`the judiciary would be the least dangerous branch`,`a large republic is the best way to control factions`],`Brutus feared a distant, powerful national government and favored a small, decentralized republic.`);
+q('brutus1',`Which parts of the Constitution did the author of Brutus No. 1 warn would give Congress nearly unlimited power?`,[`The necessary and proper clause and the supremacy clause`,`The full faith and credit clause and the extradition clause`,`The Three-Fifths Compromise and the Electoral College`,`Article V and Article VII`],`Brutus argued these clauses would let the national government absorb the powers of the states.`);
+q('brutus1',`The author of Brutus No. 1 would most likely support`,[`keeping most power in state governments close to the people`,`giving Congress broad implied powers`,`a large standing army controlled by the national government`,`ending the states’ power to collect taxes`],`Brutus believed only small, local governments could truly reflect the will of the people.`);
+q('brutus1',`Federalist No. 10 and Brutus No. 1 disagreed most directly about`,[`whether a large republic could protect liberty and serve the public good`,`whether the president should have a veto`,`whether slavery should be abolished`,`whether the Supreme Court should have judicial review`],`Madison said a large republic controls factions. Brutus said a large republic cannot represent the people.`);
+q('antifed',`Which argument was most commonly made by the Anti-Federalists?`,[`A strong central government would threaten individual liberty and the power of the states`,`The Articles of Confederation gave the national government too much power`,`A large republic is the best way to control factions`,`A bill of rights was unnecessary and could be dangerous`],`Saying a bill of rights was unnecessary was a Federalist argument (Hamilton, Federalist No. 84). Anti-Federalists wanted power kept close to the people.`);
+q('antifed',`Which group’s demands led directly to the addition of the Bill of Rights?`,[`Anti-Federalists`,`Federalists`,`Loyalists`,`Whigs`],`Several states ratified only after Federalists promised to add a bill of rights, which Madison then drafted.`);
+q('fed',`The Federalists supported ratifying the Constitution mainly because they believed`,[`a stronger national government was needed to fix the weaknesses of the Articles of Confederation`,`the states should keep nearly all of their sovereignty`,`a bill of rights had to be added before ratification`,`only a small republic could protect liberty`],`Federalists like Hamilton and Madison argued the Articles had left the nation weak and divided.`);
+q('fed',`The Federalist Papers were written by`,[`Alexander Hamilton, James Madison, and John Jay`,`Thomas Jefferson, John Adams, and Benjamin Franklin`,`George Washington, Patrick Henry, and George Mason`,`Brutus, Cato, and Centinel`],`They wrote under the shared pen name “Publius.” Brutus, Cato, and Centinel were Anti-Federalist pen names.`);
+q('fed',`The Federalist Papers were written mainly to`,[`persuade New Yorkers and others to ratify the Constitution`,`argue for keeping the Articles of Confederation`,`declare independence from Britain`,`propose the Bill of Rights`],`The essays first ran in New York newspapers in 1787–1788 to build support for ratification.`);
+q('gettysburg',`Lincoln’s Gettysburg Address calls for “government of the people, by the people, for the people.” This phrase best reflects`,[`popular sovereignty`,`federalism`,`judicial review`,`elite democracy`],`Lincoln restated the founding idea that legitimate government comes from and serves the people.`);
+q('gettysburg',`In the Gettysburg Address (1863), Lincoln tied the purpose of the Civil War to which idea from the Declaration of Independence?`,[`“All men are created equal”`,`Congress’s power to regulate commerce`,`The judiciary as the least dangerous branch`,`“Ambition must be made to counteract ambition”`],`Lincoln opened by describing a nation “dedicated to the proposition that all men are created equal.”`);
+q('jefferson',`Who was the main author of the Declaration of Independence?`,[`Thomas Jefferson`,`James Madison`,`Alexander Hamilton`,`John Adams`],`Jefferson drafted it in 1776. Adams and Franklin served with him on the drafting committee.`);
+q('jefferson',`Thomas Jefferson did not attend the Constitutional Convention because he`,[`was serving as the U.S. minister to France`,`opposed independence from Britain`,`was leading troops against Shays’ Rebellion`,`was president at the time`],`Jefferson was in Paris from 1785 to 1789. No president existed until 1789.`);
+q('madison',`Which founder is called the “Father of the Constitution” and drafted the Virginia Plan?`,[`James Madison`,`Alexander Hamilton`,`George Washington`,`Benjamin Franklin`],`Madison also wrote Federalist Nos. 10 and 51 and drafted the Bill of Rights.`);
+q('madison',`Which founder drafted the amendments that became the Bill of Rights in the First Congress?`,[`James Madison`,`Alexander Hamilton`,`Thomas Jefferson`,`George Washington`],`Madison introduced the amendments in 1789 to keep the Federalists’ promise to the Anti-Federalists.`);
+q('hamilton',`Which founder wrote most of the Federalist Papers, including Nos. 70 and 78, and became the first Secretary of the Treasury?`,[`Alexander Hamilton`,`James Madison`,`Thomas Jefferson`,`John Adams`],`Hamilton wrote about 51 of the 85 essays and favored a strong national government.`);
+q('hamilton',`Which founder favored a strong national government, a national bank, and an energetic executive?`,[`Alexander Hamilton`,`Thomas Jefferson`,`Patrick Henry`,`Jean-Jacques Rousseau`],`Hamilton’s vision of national power clashed with Jefferson’s preference for limited government.`);
+q('washington',`What role did George Washington play at the Constitutional Convention?`,[`He presided over it as the convention’s president`,`He wrote the Virginia Plan`,`He wrote Brutus No. 1`,`He refused to attend because he opposed a stronger government`],`Washington’s presence gave the Convention credibility, and he went on to become the first president.`);
+q('franklin',`At the Constitutional Convention, Benjamin Franklin is best remembered as`,[`its oldest delegate, who urged the states to compromise`,`the author of the New Jersey Plan`,`the first Chief Justice`,`the leader of Shays’ Rebellion`],`Franklin was 81 in 1787 and helped build support for compromise between large and small states.`);
+q('adams',`John Adams contributed to the founding by`,[`helping draft the Declaration of Independence and later serving as the second president`,`writing the Articles of Confederation by himself`,`presiding over the Constitutional Convention`,`writing Brutus No. 1`],`Adams served on the Declaration committee and was overseas as minister to Britain during the Convention.`);
+q('constitution',`Which feature is built into the U.S. Constitution but was missing from the Articles of Confederation?`,[`A national government with separate legislative, executive, and judicial branches`,`Equal votes for each state in a one-house Congress`,`A rule that all 13 states must approve amendments`,`State control over coining money`],`The Articles had only a Congress. The Constitution added a president and a federal court system.`);
+/* Chapter 2 */
+q('aoc',`Which was a major weakness of the Articles of Confederation?`,[`Congress had no power to collect taxes`,`The president had too much power`,`National courts struck down too many state laws`,`Congress was split into two houses that rarely agreed`],`Congress could only request money from the states, which often refused to pay.`);
+q('aoc',`Under the Articles of Confederation, amending the document required`,[`approval by all 13 states`,`a two-thirds vote of Congress only`,`the president’s approval`,`approval by three-fourths of the states`],`Requiring every state to agree made the Articles nearly impossible to fix.`);
+q('aoc',`The Articles of Confederation created a government with`,[`a one-house legislature in which each state had one vote`,`a two-house legislature based on population`,`a strong executive and national courts`,`a House of Representatives and a Senate`],`Under the Articles, Congress had one chamber, and each state had a single vote.`);
+q('aoc',`Under the Articles of Confederation, how many states had to agree to pass important laws?`,[`9 of 13`,`7 of 13`,`All 13`,`A simple majority`],`This supermajority made it hard for Congress to act.`);
+q('aoc',`Which problem under the Articles was most directly solved by giving Congress the power to regulate interstate commerce?`,[`States placing taxes and barriers on trade with one another`,`The lack of a national court system`,`Debtor uprisings like Shays’ Rebellion`,`The lack of a president`],`The commerce clause let Congress create one national market instead of 13 competing ones.`);
+q('aoc',`Which change from the Articles of Confederation to the Constitution strengthened the national government?`,[`Congress gained the power to tax and to regulate interstate commerce`,`States gained the power to print their own money`,`The national government lost the power to declare war`,`The executive branch was removed`],`These new powers fixed two of the Articles’ biggest weaknesses.`);
+q('shays',`Shays’ Rebellion (1786–1787) mattered because it`,[`showed the national government under the Articles was too weak to keep order, which led to calls for a new constitution`,`led directly to the Declaration of Independence`,`was the first use of judicial review`,`convinced the states to ratify the Bill of Rights before the Constitution`],`Congress had no army or money to respond, so Massachusetts had to raise its own force.`);
+q('shays',`Who took part in Shays’ Rebellion?`,[`Indebted Massachusetts farmers protesting taxes and foreclosures`,`Southern planters opposing tariffs`,`British soldiers who stayed after the Revolution`,`Delegates who walked out of the Constitutional Convention`],`Daniel Shays, a Revolutionary War veteran, led farmers who were losing land to debt.`);
+q('convention',`The original purpose of the Constitutional Convention in 1787 was to`,[`revise the Articles of Confederation`,`declare independence from Britain`,`write the Bill of Rights`,`elect the first president`],`Delegates were sent to revise the Articles but wrote a new constitution instead.`);
+q('virginia',`The Virginia Plan proposed`,[`a two-house legislature with representation based on population`,`a one-house legislature with equal representation for each state`,`keeping the Articles of Confederation unchanged`,`an elected monarch`],`Drafted by Madison, it favored large states and a strong national government.`);
+q('nj',`Small states supported the New Jersey Plan because it`,[`gave each state equal representation in a one-house legislature`,`based representation on population`,`eliminated the states`,`created a powerful single executive`],`William Paterson’s plan protected small states from being outvoted by large ones.`);
+q('virginia',`Which statement correctly compares the Virginia Plan and the New Jersey Plan?`,[`The Virginia Plan favored large states with population-based representation; the New Jersey Plan favored small states with equal representation`,`Both plans called for equal representation for every state`,`The New Jersey Plan favored large states; the Virginia Plan favored small states`,`Both plans kept the Articles of Confederation unchanged`],`The clash between these two plans led to the Great Compromise.`);
+q('great',`The Great Compromise settled the dispute between large and small states by`,[`creating a House based on population and a Senate with equal representation`,`counting enslaved people as three-fifths of a person`,`letting the Electoral College choose Congress`,`giving each state one vote in a one-house Congress`],`It blended the Virginia Plan (House) and the New Jersey Plan (Senate).`);
+q('great',`The Great Compromise is also known as the`,[`Connecticut Compromise`,`Virginia Compromise`,`Three-Fifths Compromise`,`Missouri Compromise`],`Roger Sherman of Connecticut proposed it.`);
+q('threefifths',`The Three-Fifths Compromise settled a dispute over`,[`how enslaved people would be counted for representation and taxation`,`how many states were needed to ratify the Constitution`,`how many votes it takes to override a veto`,`how senators would be chosen`],`Southern states wanted enslaved people counted for House seats and Northern states objected, so three-fifths were counted.`);
+q('electoral',`The Electoral College was a compromise between`,[`having Congress choose the president and having the people elect the president directly`,`the Virginia Plan and the New Jersey Plan`,`Federalists and Anti-Federalists over the Bill of Rights`,`the North and South over the slave trade`],`The framers wanted neither a president dependent on Congress nor one chosen by a direct national vote.`);
+q('electoral',`How is the number of electors for each state determined?`,[`The state’s number of House members plus its two senators`,`Every state receives the same number`,`One elector for every 100,000 residents`,`Each governor decides`],`There are 538 electors in all, and 270 wins the presidency.`);
+q('electoral',`The Electoral College best reflects which of the following?`,[`Federalism and elite democracy, because states choose electors instead of using a national popular vote`,`Participatory democracy, because citizens vote directly for president`,`Judicial review`,`The supremacy clause`],`Electors stand between the voters and the final choice, and each state runs its own process.`);
+q('bicameral',`A bicameral legislature`,[`has two chambers`,`has one chamber`,`meets twice a year`,`is chosen by two branches`],`Congress is bicameral: the House and the Senate.`);
+q('ratification',`According to Article VII, how many states had to ratify the Constitution for it to take effect?`,[`9 of 13`,`13 of 13`,`7 of 13`,`10 of 13`],`New Hampshire became the ninth state in June 1788.`);
+q('articles13',`Article II of the Constitution establishes`,[`the executive branch`,`the legislative branch`,`the judicial branch`,`the amendment process`],`Article I = Congress, Article II = the president, Article III = the courts.`);
+q('articles13',`Which article of the Constitution creates Congress and lists its powers?`,[`Article I`,`Article II`,`Article III`,`Article V`],`Article I, Section 8 lists Congress’s enumerated powers, ending with the necessary and proper clause.`);
+q('articles13',`Article III of the Constitution establishes`,[`the Supreme Court and the federal judiciary`,`the presidency`,`the process for admitting new states`,`the supremacy clause`],`New states are covered in Article IV, and the supremacy clause is in Article VI.`);
+q('articleV',`Which describes the most common way the Constitution has been amended?`,[`Proposed by two-thirds of both houses of Congress and ratified by three-fourths of state legislatures`,`Proposed by the president and approved by the Supreme Court`,`Proposed by a national convention and ratified by a national popular vote`,`Proposed by a majority of states and approved by Congress`],`All 27 amendments were proposed by Congress, and all but the 21st were ratified by state legislatures.`);
+q('articleV',`Article V makes the Constitution hard to amend. This best reflects the framers’ wish to`,[`protect the Constitution from temporary majorities while still allowing change`,`let the president change the Constitution easily`,`give small states a veto over all laws`,`stop the Constitution from ever changing`],`Requiring supermajorities at both stages means only broadly supported changes pass.`);
+q('bor',`The Bill of Rights was added mainly to`,[`win over Anti-Federalists by protecting individual liberties`,`give the national government more power over the states`,`create the Electoral College`,`end the Articles of Confederation`],`Ratified in 1791, the first ten amendments answered the Anti-Federalists’ biggest complaint.`);
+q('checks',`The president’s veto and Congress’s power to override it with a two-thirds vote are examples of`,[`checks and balances`,`federalism`,`judicial review`,`popular sovereignty`],`Each branch has tools to limit the others.`);
+q('checks',`Which is an example of the judicial branch checking the legislative branch?`,[`Declaring a law passed by Congress unconstitutional`,`Vetoing a bill`,`Confirming a federal judge`,`Impeaching a president`],`Judicial review, established in Marbury v. Madison, lets courts strike down laws.`);
+q('checks',`Which is an example of the legislative branch checking the executive branch?`,[`The Senate rejects the president’s nominee for Secretary of State`,`The president vetoes a spending bill`,`The Supreme Court strikes down an executive order`,`A governor refuses federal funds`],`Senate confirmation (advice and consent) is a legislative check on the president.`);
+q('checks',`Which is an example of the executive branch checking the judicial branch?`,[`The president nominates federal judges`,`The Senate confirms federal judges`,`Congress impeaches a judge`,`The Supreme Court overturns a lower court`],`The president shapes the courts through nominations. Pardons are another executive check.`);
+q('separation',`Which statement best describes separation of powers?`,[`Making, enforcing, and interpreting laws are assigned to different branches`,`Power is divided between the national and state governments`,`Each branch can block actions of the others`,`Citizens choose leaders in elections`],`Dividing power between levels is federalism, and branches blocking each other is checks and balances.`);
+q('separation',`The framers created separation of powers mainly to`,[`keep any one person or group from gaining too much power`,`make government act faster`,`give states control of national policy`,`let citizens vote on all laws`],`In Federalist No. 47, Madison called concentrated power “the very definition of tyranny.”`);
+q('federalism',`Which is the best example of federalism rather than separation of powers?`,[`States set their own speed limits while the national government regulates air travel`,`The president commands the military while Congress funds it`,`The Supreme Court reviews laws passed by Congress`,`The Senate confirms ambassadors`],`Federalism divides power between levels of government. Separation of powers divides it among branches.`);
+q('advice',`The Senate’s power of “advice and consent” lets it`,[`approve presidential appointments and treaties`,`impeach the president`,`start all tax bills`,`declare laws unconstitutional`],`Tax bills must start in the House, impeachment charges come from the House, and judicial review belongs to the courts.`);
+q('advice',`What vote does the Senate need to approve a treaty?`,[`Two-thirds of senators present`,`A simple majority`,`Three-fourths`,`Every senator`],`Treaties need two-thirds. Appointments need a simple majority.`);
+q('impeach',`Which correctly describes impeachment?`,[`The House impeaches by majority vote; the Senate holds a trial and needs two-thirds to remove`,`The Senate impeaches; the House holds the trial`,`The Supreme Court impeaches; Congress removes`,`The House impeaches and removes by a two-thirds vote`],`Impeachment is the charge. Removal requires conviction by two-thirds of the Senate.`);
+q('impeach',`Which body has the sole power to impeach federal officials?`,[`The House of Representatives`,`The Senate`,`The Supreme Court`,`The president`],`The Senate has the sole power to try impeachments.`);
+q('veto',`If the president vetoes a bill, Congress can still make it law by`,[`a two-thirds vote in both the House and Senate`,`a simple majority in the House only`,`asking the Supreme Court to approve it`,`a three-fourths vote of the states`],`An override is the legislature’s check on the veto.`);
+q('fed51',`“If men were angels, no government would be necessary.” This line from Federalist No. 51 supports the argument that`,[`government needs internal controls such as separation of powers and checks and balances`,`the national government should be abolished`,`states should have no power`,`a single executive brings energy to government`],`Because people are not angels, government must be designed to control itself.`);
+q('fed51',`Federalist No. 51 says “ambition must be made to counteract ambition.” This means`,[`each branch should have the means and motive to resist abuses by the others`,`leaders should be chosen for their ambition`,`the president should control Congress`,`states should compete for national power`],`Officials will defend their own branch’s power, which keeps every branch in check.`);
+q('fed51',`Federalist No. 51 describes a “double security” for the rights of the people. This refers to`,[`power divided between national and state governments, then divided again among branches within each`,`the Bill of Rights and the Declaration of Independence`,`two senators from every state`,`the veto and judicial review`],`Federalism plus separation of powers gives two layers of protection.`);
+q('fed70',`In Federalist No. 70, Alexander Hamilton argued for`,[`a single, energetic executive`,`an executive council of several people`,`a weak executive chosen by state legislatures`,`eliminating the executive branch`],`Hamilton wrote that “energy in the executive is a leading character in the definition of good government.”`);
+q('fed70',`Hamilton argued that one executive is better than a group because one person`,[`can act quickly and decisively and is easier to hold accountable`,`is less likely to use the veto`,`would be chosen directly by the people`,`would serve only one term`],`A council could hide blame and slow down action. A single executive cannot.`);
+q('fed78',`In Federalist No. 78, Hamilton called the judiciary the “least dangerous” branch because it`,[`controls neither the sword nor the purse, only judgment`,`is elected directly by the people`,`can be overruled by the states`,`has the power to declare war`],`Courts cannot enforce their rulings or spend money on their own.`);
+q('fed78',`Federalist No. 78 defends life terms for federal judges because they`,[`protect judicial independence from political pressure`,`let the president control the courts`,`keep judges loyal to their home state`,`ensure judges agree with Congress`],`Judges serve “during good behavior,” so they can rule without fear of losing their jobs.`);
+q('fed78',`“The interpretation of the laws is the proper and peculiar province of the courts.” This argument from Federalist No. 78 most directly supports`,[`judicial review`,`the Electoral College`,`the elastic clause`,`the Three-Fifths Compromise`],`Hamilton argued courts must strike down laws that conflict with the Constitution. Marbury v. Madison made it official.`);
+q('marbury',`Marbury v. Madison (1803) is significant because it established`,[`judicial review, the power of courts to declare laws unconstitutional`,`that states cannot tax the national government`,`that Congress has implied powers`,`that the Second Amendment applies to the states`],`Chief Justice John Marshall’s ruling made the courts a true check on the other branches.`);
+q('marbury',`In Marbury v. Madison, the Supreme Court struck down part of which law?`,[`The Judiciary Act of 1789`,`The Gun-Free School Zones Act`,`The Alien and Sedition Acts`,`The Bill of Rights`],`The Court said the Act unconstitutionally expanded its original jurisdiction.`);
+q('marbury',`Which principle was strengthened by Marbury v. Madison?`,[`Checks and balances, by letting the judiciary check Congress and the president`,`Federalism, by giving the states more power`,`Participatory democracy, by letting citizens vote on laws`,`Elite democracy, by creating the Electoral College`],`Judicial review is the judiciary’s main check on the other branches.`);
+/* Chapter 3 */
+q('federalism',`Federalism is best defined as`,[`dividing power between a national government and state governments`,`dividing power among three branches`,`the power of courts to review laws`,`a system in which states hold all power`],`Separation of powers divides power among branches. Federalism divides it between levels.`);
+q('federalism',`Compared with the Articles of Confederation, the Constitution shifted power`,[`toward the national government`,`toward the states`,`away from government entirely`,`to the Supreme Court alone`],`The Constitution kept the states but gave the national government new powers, like taxing and regulating commerce.`);
+q('federalism',`Marijuana is legal under some state laws but illegal under federal law. This conflict best shows`,[`tension between state and national authority in a federal system`,`separation of powers`,`the Three-Fifths Compromise`,`checks and balances between Congress and the courts`],`Federalism lets states act, but the supremacy clause makes federal law win in a direct conflict.`);
+q('delegated',`Which is a delegated (exclusive) power of the national government?`,[`Coining money`,`Collecting taxes`,`Setting up public schools`,`Issuing driver’s licenses`],`Collecting taxes is concurrent. Schools and licenses are reserved to the states.`);
+q('reserved',`Which is an example of a reserved power?`,[`Running elections and setting up public schools`,`Declaring war`,`Making treaties`,`Coining money`],`The Tenth Amendment reserves undelegated powers to the states.`);
+q('concurrent',`Which power is shared by the national and state governments?`,[`Collecting taxes`,`Declaring war`,`Regulating interstate commerce`,`Conducting foreign policy`],`Shared powers are called concurrent powers.`);
+q('concurrent',`Which pair lists two concurrent powers?`,[`Borrowing money and setting up courts`,`Declaring war and coining money`,`Running elections and issuing licenses`,`Making treaties and regulating interstate commerce`],`War, money, treaties, and interstate commerce are national powers. Elections and licenses are reserved to the states.`);
+q('tenth',`The Tenth Amendment says powers not delegated to the national government, nor prohibited to the states, are`,[`reserved to the states or to the people`,`given to the president`,`shared with foreign nations`,`controlled by the Supreme Court`],`This is the constitutional basis for reserved powers.`);
+q('tenth',`Which Supreme Court case most directly supports Tenth Amendment principles by limiting federal power?`,[`United States v. Lopez`,`McCulloch v. Maryland`,`Marbury v. Madison`,`McDonald v. Chicago`],`Lopez held that Congress overstepped its commerce power, leaving the issue to the states.`);
+q('extradition',`A person commits a crime in Texas and flees to Oklahoma. Oklahoma sends the person back to Texas for trial. This is`,[`extradition`,`full faith and credit`,`privileges and immunities`,`the supremacy clause`],`Article IV requires states to return fugitives to the state where the crime happened.`);
+q('ffc',`A couple married in Ohio moves to Georgia, and Georgia recognizes the marriage. This is required by the`,[`full faith and credit clause`,`privileges and immunities clause`,`commerce clause`,`necessary and proper clause`],`States must honor the public acts, records, and court rulings of other states.`);
+q('pi',`A state cannot deny visitors from other states basic rights, such as access to its courts. This is required by the`,[`privileges and immunities clause`,`full faith and credit clause`,`extradition clause`,`elastic clause`],`Article IV bars states from unreasonably discriminating against citizens of other states.`);
+q('police',`State laws requiring seat belts and restaurant inspections are examples of`,[`police powers`,`delegated powers`,`implied powers`,`the commerce clause`],`Police powers let states protect residents’ health, safety, welfare, and morals.`);
+q('supremacy',`If a state law conflicts with a valid federal law, the federal law wins because of the`,[`supremacy clause`,`Tenth Amendment`,`full faith and credit clause`,`elastic clause`],`Article VI makes the Constitution, federal laws, and treaties the supreme law of the land.`);
+q('supremacy',`The supremacy clause is found in which article of the Constitution?`,[`Article VI`,`Article I`,`Article III`,`Article V`],`Article VI also requires officials to swear an oath to support the Constitution.`);
+q('block',`Which statement best describes a block grant?`,[`Federal money for a broad purpose that states can spend with flexibility`,`Federal money for a specific purpose with strict rules`,`A federal requirement with no money attached`,`Money states send to the national government`],`Block grants come with few strings, so states decide the details.`);
+q('categorical',`The national government gives states highway money only if they set the drinking age at 21. This is an example of`,[`a categorical grant with conditions attached`,`a block grant`,`revenue sharing`,`a reserved power`],`The Supreme Court upheld this condition in South Dakota v. Dole (1987).`);
+q('block',`State governors usually prefer block grants to categorical grants because block grants`,[`give states more freedom over how the money is used`,`always provide more money`,`come with stricter rules`,`are paid for by state taxes`],`Members of Congress often prefer categorical grants because they keep more control.`);
+q('cooperative',`Which metaphor describes cooperative federalism?`,[`Marble cake`,`Layer cake`,`Melting pot`,`Salad bowl`],`In a marble cake the layers swirl together, like shared national and state responsibilities.`);
+q('dual',`Which metaphor describes dual federalism?`,[`Layer cake`,`Marble cake`,`Melting pot`,`Salad bowl`],`Dual federalism keeps national and state powers in separate, distinct layers.`);
+q('dual',`Dual federalism is best described as`,[`national and state governments working in separate, clearly defined spheres`,`national and state governments sharing responsibility for policies`,`the national government controlling all policy`,`states controlling foreign policy`],`This was the main approach from the founding until the New Deal.`);
+q('cooperative',`Programs like Medicaid, paid for by both the national and state governments and run by the states, are an example of`,[`cooperative federalism`,`dual federalism`,`a confederation`,`a unitary system`],`Sharing costs and administration is the core of cooperative federalism.`);
+q('cooperative',`The New Deal of the 1930s marked a shift from`,[`dual federalism to cooperative federalism`,`cooperative federalism to dual federalism`,`a unitary system to a confederation`,`a republic to a direct democracy`],`Federal programs during the Depression mixed national and state roles.`);
+q('fiscal',`Fiscal federalism refers to`,[`the national government using grants and conditions on money to influence state policy`,`states printing their own money`,`dividing power among three branches`,`the Supreme Court’s power over state courts`],`Money with strings attached is one of the national government’s strongest tools over the states.`);
+q('grantinaid',`Grant-in-aid programs are`,[`federal funds given to state and local governments to pay for programs`,`taxes states pay to the national government`,`loans states make to each other`,`money the Supreme Court awards in lawsuits`],`Categorical grants and block grants are both kinds of grants-in-aid.`);
+q('mandates',`A federal law requires states to make public buildings accessible to people with disabilities but provides no money to do it. This is`,[`an unfunded mandate`,`a block grant`,`revenue sharing`,`a categorical grant`],`The Americans with Disabilities Act is a classic example.`);
+q('mandates',`States often oppose unfunded mandates because`,[`states must pay for federal requirements with their own money`,`states receive too much federal money`,`mandates give states too much freedom`,`mandates are always unconstitutional`],`Unfunded mandates shift costs from the national government to the states.`);
+q('revenue',`Revenue sharing, used from 1972 to 1986, gave states federal money`,[`with almost no strings attached`,`only for highway construction`,`with very strict conditions`,`in exchange for giving up reserved powers`],`It began under President Nixon’s “New Federalism.”`);
+q('necproper',`Which clause gives Congress the power to make all laws needed to carry out its listed powers?`,[`The necessary and proper clause`,`The supremacy clause`,`The commerce clause`,`The full faith and credit clause`],`It is the last clause of Article I, Section 8.`);
+q('elastic',`The necessary and proper clause is called the elastic clause because it`,[`lets Congress’s powers stretch beyond those specifically listed`,`lets the president expand executive orders`,`lets states change federal laws`,`makes the Constitution easy to amend`],`It is the source of Congress’s implied powers.`);
+q('enumerated',`Powers specifically listed in the Constitution, such as Congress’s power to declare war, are called`,[`enumerated powers`,`implied powers`,`reserved powers`,`police powers`],`Enumerated (expressed) powers appear mainly in Article I, Section 8.`);
+q('implied',`Congress’s creation of a national bank, which is not mentioned in the Constitution, is an example of`,[`an implied power`,`an enumerated power`,`a reserved power`,`a concurrent power`],`McCulloch v. Maryland upheld the bank under the necessary and proper clause.`);
+q('commerce',`The commerce clause gives Congress the power to regulate`,[`trade with foreign nations, among the states, and with Native American tribes`,`trade only within a single state`,`every business in the country without limits`,`state taxes`],`Trade within one state (intrastate commerce) is generally left to the states.`);
+q('commerce',`Over the 20th century, Congress used the commerce clause mainly to`,[`expand federal power into areas such as civil rights and the economy`,`limit the president’s power`,`give states control over foreign trade`,`create the Electoral College`],`The Civil Rights Act of 1964 rested on the commerce power. Lopez (1995) pushed back.`);
+q('selective',`The doctrine of selective exclusiveness holds that`,[`Congress alone regulates commerce that needs one national rule, while states may regulate local parts of commerce when Congress has not acted`,`states have exclusive power over all commerce`,`the president chooses which laws to enforce`,`only some states must follow federal law`],`It comes from Cooley v. Board of Wardens (1852).`);
+q('fourteenth',`The Fourteenth Amendment (1868) matters for federalism because it`,[`bars states from denying due process and equal protection, and is used to apply the Bill of Rights to the states`,`reserves powers to the states`,`created the Electoral College`,`let Congress tax incomes`],`The income tax came from the Sixteenth Amendment.`);
+q('mcculloch',`In McCulloch v. Maryland (1819), the Supreme Court ruled that`,[`Congress could create a national bank under its implied powers, and Maryland could not tax it`,`Maryland could tax the national bank`,`the Gun-Free School Zones Act was unconstitutional`,`the Second Amendment applies to the states`],`The ruling expanded national power at the expense of the states.`);
+q('mcculloch',`Which two parts of the Constitution were central to McCulloch v. Maryland?`,[`The necessary and proper clause and the supremacy clause`,`The Tenth Amendment and the Second Amendment`,`The commerce clause and the Fourteenth Amendment`,`Article V and the Electoral College`],`Necessary and proper allowed the bank. Supremacy blocked Maryland’s tax.`);
+q('mcculloch',`Chief Justice John Marshall wrote in McCulloch v. Maryland that “the power to tax involves the power to destroy.” He meant`,[`if states could tax the national government, they could weaken or destroy it`,`the national government should never collect taxes`,`all taxes are unconstitutional`,`states should have unlimited taxing power`],`Under the supremacy clause, states cannot interfere with valid federal institutions.`);
+q('lopez',`In United States v. Lopez (1995), the Supreme Court ruled that`,[`Congress exceeded its commerce clause power by banning guns near schools`,`Congress may regulate anything that affects the economy`,`states must honor other states’ gun licenses`,`the Second Amendment applies to the states`],`Carrying a gun near a school was not economic activity that substantially affected interstate commerce.`);
+q('lopez',`United States v. Lopez was significant because it`,[`was the first time in decades the Court limited the commerce clause, strengthening state power`,`expanded federal control over education`,`established judicial review`,`created the national bank`],`It was the first such limit since the 1930s.`);
+q('lopez',`The law challenged in United States v. Lopez was the`,[`Gun-Free School Zones Act of 1990`,`Judiciary Act of 1789`,`Civil Rights Act of 1964`,`Affordable Care Act`],`Alfonso Lopez, a high school senior, was charged under it for bringing a gun to school.`);
+q('lopez',`How did United States v. Lopez differ from McCulloch v. Maryland?`,[`Lopez limited federal power, while McCulloch expanded it`,`Lopez expanded federal power, while McCulloch limited it`,`Both cases limited federal power`,`Both cases were about state taxes`],`McCulloch backed broad implied powers. Lopez set limits on the commerce power.`);
+q('mcdonald',`McDonald v. Chicago (2010) held that`,[`the Second Amendment right to bear arms applies to state and local governments through the Fourteenth Amendment`,`Congress cannot regulate guns near schools`,`states may tax federal institutions`,`cities may ban all handguns`],`It struck down Chicago’s handgun ban. This is selective incorporation.`);
+q('mcdonald',`In McDonald v. Chicago, the Court applied the Second Amendment to the states through which amendment?`,[`The Fourteenth Amendment`,`The Tenth Amendment`,`The First Amendment`,`The Fifth Amendment`],`The Fourteenth Amendment’s due process clause is used to incorporate the Bill of Rights.`);
+q('fed39',`In Federalist No. 39, Madison argued that the proposed Constitution`,[`creates a government that is partly national and partly federal`,`creates a purely national government with no state power`,`keeps the structure of the Articles of Confederation`,`should be rejected by the states`],`He called it “neither a national nor a federal Constitution, but a composition of both.”`);
+
+/* ---- Sort It boards ---- */
+const SORTS=[
+{id:'powers',name:'Who holds the power?',desc:'Delegated, reserved, or concurrent.',buckets:[['n','National only'],['s','States only'],['b','Both (concurrent)']],items:[
+ ['Coin and print money','n'],['Declare war','n'],['Make treaties with other countries','n'],['Regulate interstate and foreign trade','n'],['Establish post offices','n'],['Raise an army and navy','n'],
+ ['Run elections','s'],['Set up public schools','s'],['Issue marriage and driver’s licenses','s'],['Regulate trade within the state','s'],['Create cities and counties','s'],['Pass health and safety laws','s'],
+ ['Collect taxes','b'],['Borrow money','b'],['Set up courts','b'],['Make and enforce laws','b'],['Charter banks','b'],['Spend money for the general welfare','b']]},
+{id:'models',name:'Models of democracy',desc:'Elite, pluralist, or participatory?',buckets:[['e','Elite'],['p','Pluralist'],['a','Participatory']],items:[
+ ['The Electoral College chooses the president','e'],['State legislatures originally chose senators','e'],['Federal judges are appointed, not elected','e'],['Educated leaders decide for the public','e'],
+ ['Interest groups lobby Congress','p'],['Unions and business groups compete over a bill','p'],['Many factions check each other (Federalist No. 10)','p'],['The AARP and NRA push for their members','p'],
+ ['Citizens propose a law through an initiative','a'],['Voters approve a tax in a referendum','a'],['Neighbors speak at a town hall meeting','a'],['Voters pick party nominees in primaries','a']]},
+{id:'ratify',name:'Federalists or Anti-Federalists?',desc:'Who said it, who wrote it, who wanted it.',buckets:[['f','Federalists'],['a','Anti-Federalists']],items:[
+ ['Supported ratifying the Constitution','f'],['Wrote the Federalist Papers','f'],['A large republic controls factions','f'],['Hamilton, Madison, and John Jay','f'],['A bill of rights is unnecessary','f'],['Wanted a strong national government','f'],
+ ['Wrote Brutus No. 1','a'],['Demanded a bill of rights','a'],['Feared the necessary and proper clause','a'],['Wanted power kept in the states','a'],['Only a small republic protects liberty','a'],['Patrick Henry and George Mason','a']]},
+{id:'aoc',name:'Articles or Constitution?',desc:'Which plan of government had it?',buckets:[['a','Articles of Confederation'],['c','Constitution']],items:[
+ ['One-house legislature','a'],['No national executive','a'],['No national courts','a'],['Congress could not collect taxes','a'],['Amendments need all 13 states','a'],['Laws need 9 of 13 states','a'],
+ ['Two-house Congress','c'],['A president enforces the laws','c'],['A Supreme Court','c'],['Congress can collect taxes','c'],['Amendments need three-fourths of states','c'],['Congress regulates interstate commerce','c']]},
+{id:'plans',name:'Convention plans',desc:'Virginia, New Jersey, or the compromise?',buckets:[['v','Virginia Plan'],['n','New Jersey Plan'],['g','Great Compromise']],items:[
+ ['Written by James Madison','v'],['Representation by population in both houses','v'],['Favored large states','v'],
+ ['Proposed by William Paterson','n'],['One-house legislature with equal votes','n'],['Favored small states','n'],
+ ['House by population, Senate equal','g'],['Two senators per state','g'],['Also called the Connecticut Compromise','g'],['Proposed by Roger Sherman','g']]},
+{id:'branches',name:'Articles I, II, and III',desc:'Which article of the Constitution covers it?',buckets:[['1','Article I · Congress'],['2','Article II · President'],['3','Article III · Courts']],items:[
+ ['Necessary and proper clause','1'],['Commerce clause','1'],['Power to declare war','1'],['Power to lay and collect taxes','1'],['Rules for the House and Senate','1'],
+ ['Commander in chief of the military','2'],['Makes treaties with Senate consent','2'],['Nominates ambassadors and judges','2'],['How electors choose the president','2'],
+ ['Creates the Supreme Court','3'],['Judges serve during “good behavior”','3'],['Defines treason','3']]},
+{id:'articles47',name:'Articles IV to VII',desc:'The rest of the Constitution’s articles.',buckets:[['4','Article IV · States'],['5','Article V · Amendments'],['6','Article VI · Supremacy'],['7','Article VII · Ratification']],items:[
+ ['Full faith and credit clause','4'],['Privileges and immunities clause','4'],['Extradition of fugitives','4'],['Admitting new states','4'],
+ ['Two-thirds of Congress can propose amendments','5'],['Three-fourths of states ratify amendments','5'],['States can call a convention to propose amendments','5'],
+ ['Supremacy clause','6'],['No religious test for public office','6'],['Officials swear an oath to support the Constitution','6'],
+ ['Nine states needed to ratify the Constitution','7'],['Constitution takes effect among the ratifying states','7']]},
+{id:'fedtypes',name:'Dual or cooperative?',desc:'Two eras of federalism.',buckets:[['d','Dual federalism'],['c','Cooperative federalism']],items:[
+ ['Layer cake','d'],['Separate, clearly defined spheres','d'],['Main approach before the 1930s','d'],['Each level stays in its own lane','d'],['National government sticks to its listed powers','d'],
+ ['Marble cake','c'],['Shared responsibilities across levels','c'],['Grew with the New Deal','c'],['Medicaid: shared funding, run by states','c'],['Federal grants pay for state programs','c']]},
+{id:'money',name:'Grants and mandates',desc:'Follow the federal money.',buckets:[['c','Categorical grant'],['b','Block grant'],['m','Unfunded mandate'],['r','Revenue sharing']],items:[
+ ['Money for a specific purpose with strict rules','c'],['Highway funds tied to a drinking age of 21','c'],['Gives Congress the most control','c'],
+ ['Money for a broad purpose like community development','b'],['Gives states the most flexibility','b'],['TANF welfare funding','b'],
+ ['A requirement with no money attached','m'],['Americans with Disabilities Act accessibility rules','m'],['States pay compliance costs themselves','m'],
+ ['Money with almost no strings attached','r'],['Nixon-era program from 1972 to 1986','r']]},
+{id:'thinkers',name:'Enlightenment thinkers',desc:'Match the idea to the philosopher.',buckets:[['h','Hobbes'],['l','Locke'],['m','Montesquieu'],['r','Rousseau']],items:[
+ ['Leviathan (1651)','h'],['Life without government is “nasty, brutish, and short”','h'],['Trade freedom to a strong ruler for security','h'],
+ ['Two Treatises of Government','l'],['Natural rights to life, liberty, and property','l'],['People may overthrow a government that violates their rights','l'],
+ ['The Spirit of the Laws','m'],['Separate legislative, executive, and judicial power','m'],['Inspired checks and balances','m'],
+ ['The Social Contract (1762)','r'],['Government should follow the “general will”','r'],['Sovereignty belongs to the people as a whole','r']]},
+{id:'checks',name:'Checks and balances',desc:'Which branch uses this check?',buckets:[['l','Congress'],['e','President'],['j','Courts']],items:[
+ ['Overrides a veto with a two-thirds vote','l'],['Impeaches and removes officials','l'],['Confirms the president’s nominees','l'],['Approves treaties','l'],
+ ['Vetoes a bill','e'],['Nominates federal judges','e'],['Grants pardons','e'],['Calls Congress into special session','e'],
+ ['Declares a law unconstitutional','j'],['Strikes down an executive order','j'],['Chief justice presides over a president’s impeachment trial','j']]}
+];
+
+/* ---- Timeline events (year, event) ---- */
+const EVENTS=[
+ [1651,'Thomas Hobbes publishes Leviathan'],[1689,'John Locke publishes Two Treatises of Government'],[1748,'Montesquieu publishes The Spirit of the Laws'],[1762,'Rousseau publishes The Social Contract'],
+ [1776,'The Declaration of Independence is adopted'],[1781,'The Articles of Confederation take effect'],[1786,'Shays’ Rebellion breaks out in Massachusetts'],[1787,'The Constitutional Convention meets in Philadelphia'],
+ [1788,'The ninth state ratifies the Constitution'],[1789,'George Washington becomes the first president'],[1791,'The Bill of Rights, including the Tenth Amendment, is ratified'],[1803,'Marbury v. Madison establishes judicial review'],
+ [1819,'McCulloch v. Maryland upholds the national bank'],[1852,'Cooley v. Board of Wardens sets out selective exclusiveness'],[1863,'Lincoln delivers the Gettysburg Address'],[1868,'The Fourteenth Amendment is ratified'],
+ [1933,'The New Deal begins the era of cooperative federalism'],[1972,'Revenue sharing begins under President Nixon'],[1995,'United States v. Lopez limits the commerce clause'],[2010,'McDonald v. Chicago applies the Second Amendment to the states']
+];
+
+/* ---- Comparison charts ---- */
+const TABLES=[
+{t:'Foundational documents',note:'Who wrote it, when, and the line to remember.',head:['Document','Author','Year','Main argument','Line to know'],rows:[
+ ['Declaration of Independence','Thomas Jefferson','1776','Natural rights, consent of the governed, and the right to abolish an unjust government','“All men are created equal”'],
+ ['Articles of Confederation','Continental Congress','1781','A loose union of sovereign states with a weak Congress','“A firm league of friendship”'],
+ ['U.S. Constitution','Constitutional Convention','1787','A federal republic with separated powers and checks and balances','“We the People”'],
+ ['Brutus No. 1','Anti-Federalist (likely Robert Yates)','1787','A large republic cannot represent the people; national power will swallow the states','“The manners, sentiments, and interests of the people should be similar”'],
+ ['Federalist No. 10','James Madison','1787','A large republic controls the effects of factions','“Extend the sphere”'],
+ ['Federalist No. 39','James Madison','1788','The new government is partly national and partly federal','“Neither a national nor a federal Constitution, but a composition of both”'],
+ ['Federalist No. 51','James Madison','1788','Separation of powers and checks and balances guard liberty','“Ambition must be made to counteract ambition”'],
+ ['Federalist No. 70','Alexander Hamilton','1788','A single, energetic executive','“Energy in the executive”'],
+ ['Federalist No. 78','Alexander Hamilton','1788','The judiciary is the least dangerous branch; judicial review; life terms','“Neither force nor will, but merely judgment”'],
+ ['Gettysburg Address','Abraham Lincoln','1863','The war tests whether a nation built on equality can survive','“Of the people, by the people, for the people”']]},
+{t:'Supreme Court cases',note:'The four cases on your review sheet.',head:['Case','Year','Question','Ruling','Why it matters'],rows:[
+ ['Marbury v. Madison','1803','Can the Court strike down a law that conflicts with the Constitution?','Yes. Part of the Judiciary Act of 1789 was unconstitutional.','Established judicial review'],
+ ['McCulloch v. Maryland','1819','Can Congress create a national bank, and can a state tax it?','Yes to the bank (implied powers); no to the tax (supremacy clause)','Expanded national power'],
+ ['United States v. Lopez','1995','Can Congress ban guns near schools under the commerce clause?','No. Carrying a gun is not economic activity.','Limited the commerce clause and boosted state power'],
+ ['McDonald v. Chicago','2010','Does the Second Amendment limit state and local governments?','Yes, through the Fourteenth Amendment','Selective incorporation of gun rights']]},
+{t:'Models of democracy',note:'Who has the most influence in each model.',head:['Model','Who has influence','Examples in the U.S.','Linked document'],rows:[
+ ['Participatory','Ordinary citizens, through broad and direct participation','Initiatives, referendums, primaries, town halls','Brutus No. 1 (power close to the people)'],
+ ['Pluralist','Organized groups competing with each other','Interest groups lobbying; unions vs. business groups','Federalist No. 10 (many competing factions)'],
+ ['Elite','A small, educated, often wealthy group','Electoral College; senators first chosen by state legislatures; appointed judges','The Constitution’s indirect elections']]},
+{t:'Federalists vs. Anti-Federalists',note:'The ratification debate, side by side.',head:['','Federalists','Anti-Federalists'],rows:[
+ ['Position','Supported ratification','Opposed ratification as written'],
+ ['Wanted','A stronger national government','Power kept in the states, close to the people'],
+ ['Feared','Disorder and weakness like under the Articles','A distant national government that would crush liberty and the states'],
+ ['Size of republic','A large republic controls factions (Federalist No. 10)','Only a small republic can represent the people (Brutus No. 1)'],
+ ['Bill of rights','Unnecessary at first, then promised one','Demanded one'],
+ ['Key writings','The Federalist Papers, as “Publius”','Essays by Brutus, Cato, and Centinel'],
+ ['Leaders','Hamilton, Madison, John Jay','Patrick Henry, George Mason, Robert Yates']]},
+{t:'Articles of Confederation vs. Constitution',note:'What changed in 1787.',head:['','Articles (1781)','Constitution (1787)'],rows:[
+ ['Legislature','One house','Two houses'],['Representation','One vote per state','House by population; Senate equal'],['Executive','None','President'],['Courts','No national courts','Supreme Court and federal courts'],
+ ['Taxes','Congress could only ask states for money','Congress can collect taxes'],['Trade','No power over interstate commerce','Congress regulates interstate and foreign commerce'],
+ ['Passing laws','9 of 13 states','Majority of both houses plus the president (or a veto override)'],['Amending','All 13 states','Two-thirds to propose, three-fourths to ratify']]},
+{t:'Plans at the Constitutional Convention',note:'How the representation fight was settled.',head:['','Virginia Plan','New Jersey Plan','Great Compromise'],rows:[
+ ['Proposed by','James Madison (presented by Edmund Randolph)','William Paterson','Roger Sherman of Connecticut'],['Legislature','Two houses','One house','Two houses'],
+ ['Representation','By population in both houses','Equal for every state','House by population; Senate 2 per state'],['Favored','Large states','Small states','Both sides gave ground']]},
+{t:'Checks and balances',note:'Read across: how each branch checks the others.',head:['Branch','Checks on Congress','Checks on the president','Checks on the courts'],rows:[
+ ['Congress','—','Override vetoes (2/3); impeach and remove; confirm appointments; approve treaties; control spending','Confirm judges; impeach judges; create lower courts; propose amendments'],
+ ['President','Veto bills; call special sessions','—','Nominate judges; grant pardons'],
+ ['Courts','Judicial review of laws (Marbury v. Madison)','Judicial review of executive actions','—']]},
+{t:'Amending the Constitution (Article V)',note:'Two ways to propose, two ways to ratify.',head:['Step','Option A','Option B'],rows:[
+ ['Propose','Two-thirds of both houses of Congress (used for all 27 amendments)','A national convention called by two-thirds of state legislatures (never used)'],
+ ['Ratify','Three-fourths of state legislatures (26 amendments)','Three-fourths of state conventions (only the 21st)']]},
+{t:'Powers in the federal system',note:'Who holds which powers, and where they come from.',head:['Type','Held by','Source','Examples'],rows:[
+ ['Delegated / enumerated','National government','Article I, Section 8','Coin money, declare war, make treaties, regulate interstate commerce'],
+ ['Implied','National government','Necessary and proper (elastic) clause','Create a national bank'],
+ ['Reserved','States','Tenth Amendment','Run elections and schools, issue licenses, police powers'],
+ ['Concurrent','Both','Shared by design','Tax, borrow, set up courts, make and enforce laws']]},
+{t:'Article IV: how states treat each other',note:'Interstate obligations.',head:['Clause','What it requires','Example'],rows:[
+ ['Full faith and credit','Honor other states’ public acts, records, and court rulings','A marriage or court judgment from Ohio counts in Georgia'],
+ ['Privileges and immunities','No unreasonable discrimination against out-of-state citizens','Visitors can use a state’s courts and buy property'],
+ ['Extradition','Return people accused of crimes to the state where the crime happened','Oklahoma sends a fugitive back to Texas']]},
+{t:'Federal money and mandates',note:'How the national government steers the states.',head:['Tool','Strings attached','Who likes it','Example'],rows:[
+ ['Categorical grant','Many: a specific purpose with rules','Congress (keeps control)','Highway funds tied to a drinking age of 21'],
+ ['Block grant','Few: a broad purpose, state flexibility','Governors and states’ rights supporters','TANF welfare funds; community development'],
+ ['Revenue sharing','Almost none','States and localities','Nixon-era program, 1972–1986'],
+ ['Unfunded mandate','A requirement with no money','Nobody at the state level','Americans with Disabilities Act rules']]},
+{t:'Dual vs. cooperative federalism',note:'Two eras of the national–state relationship.',head:['','Dual federalism','Cooperative federalism'],rows:[
+ ['Nickname','Layer cake','Marble cake'],['Relationship','Separate, clearly divided spheres','Shared responsibilities across levels'],['Era','Founding to the 1930s','The New Deal (1930s) onward'],
+ ['Example','States alone run schools and local law; the nation handles defense and trade','Medicaid: federal and state money, run by the states']]}
+];
+
+/* =========================================================
+   APP
+   ========================================================= */
+const LETTERS='ABCD';
+const CHOPTS=[['all','All chapters'],['1','Ch. 1'],['2','Ch. 2'],['3','Ch. 3']];
+
+/* ---- progress, saved in this browser only ---- */
+const KEY='apgov-u1-review-v2';
+function fresh(){ return {terms:{},mistakes:{},known:{},best:{},total:0,correct:0,bestStreak:0,settings:{}}; }
+let S=fresh();
+try{
+  const raw=localStorage.getItem(KEY);
+  if(raw) S=Object.assign(fresh(),JSON.parse(raw));
+  else {
+    const old=localStorage.getItem('apgov-u1-jackpot-v1');
+    if(old){ const o=JSON.parse(old); ['terms','mistakes','known','best','total','correct','bestStreak'].forEach(k=>{ if(o[k]!=null) S[k]=o[k]; }); if(o.settings){ const st=Object.assign({},o.settings); delete st.mute; S.settings=st; } }
+  }
+}catch(e){}
+function save(){ try{ localStorage.setItem(KEY,JSON.stringify(S)); }catch(e){} }
+
+/* ---- utils ---- */
+const VIEW=document.getElementById('view');
+function h(tag,attrs,...kids){
+  const el=document.createElement(tag);
+  if(attrs) for(const [k,v] of Object.entries(attrs)){
+    if(v==null||v===false) continue;
+    if(k.startsWith('on')&&typeof v==='function') el.addEventListener(k.slice(2),v);
+    else if(k==='class') el.className=v;
+    else if(v===true) el.setAttribute(k,'');
+    else el.setAttribute(k,String(v));
+  }
+  add(el,kids); return el;
+}
+function add(el,kids){ for(const k of kids.flat(Infinity)){ if(k==null||k===false||k==='') continue; el.append(k instanceof Node?k:document.createTextNode(String(k))); } }
+function mount(...nodes){ VIEW.replaceChildren(); add(VIEW,nodes); }
+function shuffle(a,rand=Math.random){ a=a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(rand()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+function hashStr(s){ let x=2166136261; for(let i=0;i<s.length;i++){ x^=s.charCodeAt(i); x=Math.imul(x,16777619); } return x>>>0; }
+function rng(seed){ return function(){ seed|=0; seed=seed+0x6D2B79F5|0; let t=Math.imul(seed^seed>>>15,1|seed); t=t+Math.imul(t^t>>>7,61|t)^t; return ((t^t>>>14)>>>0)/4294967296; }; }
+function pick(a){ return a[Math.floor(Math.random()*a.length)]; }
+function fmt(n){ return Number(n||0).toLocaleString('en-US'); }
+function fmtTime(ms){ const s=Math.max(0,Math.floor(ms/1000)); return Math.floor(s/60)+':'+String(s%60).padStart(2,'0'); }
+function letter(p){ return p>=90?'A':p>=80?'B':p>=70?'C':p>=60?'D':'F'; }
+function chip(label,pressed,onclick,key){ return h('button',{class:'chip',type:'button','aria-pressed':String(!!pressed),'data-key':key,onclick},label); }
+function stat(v,l){ return h('div',{class:'stat'},h('span',{class:'num'},String(v)),h('span',{class:'lbl'},l)); }
+function keepFocus(fn){ const a=document.activeElement; const key=a&&a.dataset?a.dataset.key:null; fn(); if(key){ const el=VIEW.querySelector('[data-key="'+CSS.escape(key)+'"]'); if(el&&!el.disabled) el.focus({preventScroll:true}); } }
+function avoid(a,b){ return (a.av||[]).includes(b.k)||(b.av||[]).includes(a.k); }
+function validId(id){ if(id.startsWith('v:')){ const p=id.split(':'); return !!TERM[p[2]]&&['def','term','sdef','sterm'].includes(p[1]); } return !!QMAP[id]; }
+
+/* ---- questions ---- */
+function distractors(t,rand){
+  let pool=shuffle(TERMS.filter(o=>o.k!==t.k&&o.cat===t.cat&&!avoid(t,o)),rand);
+  if(pool.length<3) pool=pool.concat(shuffle(TERMS.filter(o=>o.k!==t.k&&o.cat!==t.cat&&!avoid(t,o)),rand));
+  return pool.slice(0,3);
+}
+function buildQ(id,shuffleChoices){
+  let base;
+  if(id.startsWith('v:')){
+    const [,type,k]=id.split(':'); const t=TERM[k]; const ds=distractors(t,rng(hashStr(id)));
+    const forms={
+      def:{prompt:'Which term matches this description?',quote:t.d,c:[t.n,...ds.map(o=>o.n)],x:t.n+'. '+t.ex},
+      term:{prompt:'Which of the following best describes '+t.n+'?',c:[t.d,...ds.map(o=>o.d)],x:t.ex},
+      sdef:{prompt:'Which term matches?',quote:t.s,c:[t.n,...ds.map(o=>o.n)],x:t.n+': '+t.d},
+      sterm:{prompt:'Which best describes '+t.n+'?',c:[t.s,...ds.map(o=>o.s)],x:t.n+': '+t.d}
+    }[type];
+    base=Object.assign({id,t:k,kind:'vocab'},forms);
+  } else {
+    const o=QMAP[id]; base={id,t:o.t,kind:'ap',prompt:o.q,c:o.c,x:o.x};
+  }
+  const term=TERM[base.t];
+  const choices=shuffle(base.c.map((text,i)=>({text,ok:i===0})),shuffleChoices?Math.random:rng(hashStr(id+'|order')));
+  return Object.assign(base,{ch:term.ch,term,choices});
+}
+function poolIds(s){
+  const ok=t=>s.chs.includes(t.ch)&&(s.topic==='all'||t.cat===s.topic);
+  const ids=[];
+  if(s.ap) QS.forEach(o=>{ if(ok(TERM[o.t])) ids.push(o.id); });
+  if(s.vocab) TERMS.forEach(t=>{ if(ok(t)) ids.push('v:def:'+t.k,'v:term:'+t.k); });
+  return ids;
+}
+function record(id,k,ok){
+  const t=S.terms[k]||(S.terms[k]={s:0,c:0,r:''});
+  t.s++; if(ok) t.c++; t.r=(t.r+(ok?'1':'0')).slice(-5);
+  S.total++; if(ok) S.correct++;
+  if(!ok) S.mistakes[id]=0;
+  else if(id in S.mistakes){ S.mistakes[id]++; if(S.mistakes[id]>=2) delete S.mistakes[id]; }
+  save();
+}
+function noteStreak(n){ if(n>S.bestStreak){ S.bestStreak=n; save(); } }
+function mastery(k){ const t=S.terms[k]; if(!t||!t.s) return null; let c=0; for(const x of t.r) if(x==='1') c++; return c/t.r.length; }
+
+/* ---- confetti ---- */
+const FX=(()=>{
+  let reduce=false; try{ reduce=matchMedia('(prefers-reduced-motion: reduce)').matches; }catch(e){}
+  const cv=document.getElementById('fx'); const ctx=cv.getContext('2d');
+  let parts=[], raf=0, dpr=1;
+  function size(){ dpr=Math.min(2,window.devicePixelRatio||1); cv.width=innerWidth*dpr; cv.height=innerHeight*dpr; }
+  size(); addEventListener('resize',size);
+  const COLORS=['#1b6a80','#2a9d8f','#e9c46a','#f4a261','#e76f51','#5b8def','#8ac926'];
+  function piece(x,y,vx,vy,i){ return {x,y,vx,vy,g:.2,w:6+Math.random()*6,h:3+Math.random()*4,r:Math.random()*6,vr:(Math.random()-.5)*.3,c:COLORS[i%COLORS.length],life:100+Math.random()*50,round:Math.random()<.25}; }
+  function burst(x,y,n,power){ if(reduce) return; n=n||36; power=power||1; for(let i=0;i<n;i++){ const a=Math.random()*Math.PI*2, v=(2+Math.random()*5)*power; parts.push(piece(x,y,Math.cos(a)*v,Math.sin(a)*v-3*power,i)); } run(); }
+  function cannon(){ if(reduce) return; const W=innerWidth,H=innerHeight; for(let i=0;i<140;i++){ const left=i%2===0; const a=(left?-Math.PI/3:-2*Math.PI/3)+(Math.random()-.5)*.55; const v=11+Math.random()*9; parts.push(piece(left?0:W,H,Math.cos(a)*v,Math.sin(a)*v,i)); } run(); }
+  function run(){ if(!raf) raf=requestAnimationFrame(step); }
+  function step(){
+    ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,innerWidth,innerHeight);
+    parts=parts.filter(p=>p.life>0&&p.y<innerHeight+60);
+    for(const p of parts){ p.vy+=p.g; p.vx*=.985; p.vy*=.99; p.x+=p.vx; p.y+=p.vy; p.r+=p.vr; p.life--; ctx.save(); ctx.globalAlpha=Math.min(1,p.life/30); ctx.translate(p.x,p.y); ctx.rotate(p.r); ctx.fillStyle=p.c; if(p.round){ ctx.beginPath(); ctx.arc(0,0,p.w/2.6,0,Math.PI*2); ctx.fill(); } else ctx.fillRect(-p.w/2,-p.h/2,p.w,p.h); ctx.restore(); }
+    raf=parts.length?requestAnimationFrame(step):0;
+  }
+  return {burst,cannon,get reduce(){ return reduce; }};
+})();
+function confettiAt(el,n){
+  if(el&&el.isConnected){ const r=el.getBoundingClientRect(); FX.burst(r.left+Math.min(r.width/2,160),r.top+r.height/2,n); }
+  else FX.burst(innerWidth/2,innerHeight/2,n);
+}
+function floatText(text,x,y){ const el=h('div',{class:'floater',style:'left:'+x+'px;top:'+y+'px'},text); document.body.append(el); setTimeout(()=>el.remove(),1100); }
+function toast(title,sub){ const box=document.getElementById('toasts'); const el=h('div',{class:'toast'},h('b',{},title),sub?h('span',{},sub):null); box.append(el); while(box.children.length>2) box.firstChild.remove(); setTimeout(()=>{ el.classList.add('out'); setTimeout(()=>el.remove(),350); },2600); }
+
+/* ---- router ---- */
+let keyHandler=null, cleanups=[];
+function onCleanup(f){ cleanups.push(f); }
+function cleanup(){ const c=cleanups; cleanups=[]; c.forEach(f=>{ try{ f(); }catch(e){} }); keyHandler=null; }
+const ROUTES={home:viewHome,test:viewTest,cards:viewCards,match:viewMatch,lightning:viewLightning,survival:viewSurvival,sort:viewSort,timeline:viewTimeline,mistakes:viewMistakes,guide:viewGuide};
+function go(r,opts){ try{ if(location.hash!=='#'+r) history.pushState(null,'','#'+r); }catch(e){} render(r,opts); }
+function render(r,opts){ cleanup(); (ROUTES[r]||viewHome)(opts||{}); window.scrollTo(0,0); }
+function setNav(r){ document.getElementById('nav-home').hidden=(r==='home'); }
+window.addEventListener('popstate',()=>{ const r=location.hash.slice(1); render(ROUTES[r]?r:'home'); });
+document.addEventListener('keydown',e=>{
+  if(!keyHandler||e.metaKey||e.ctrlKey||e.altKey) return;
+  const t=e.target; if(t&&(t.tagName==='INPUT'||t.tagName==='TEXTAREA'||t.tagName==='SELECT'||t.isContentEditable)) return;
+  keyHandler(e);
+});
+
+/* =========================================================
+   HOME
+   ========================================================= */
+const fixCount=()=>Object.keys(S.mistakes).filter(validId).length;
+const MODES=[
+ {r:'test',name:'Practice Test',feature:true,meta:'4 choices · feedback after each',desc:'The real test format. Shuffle the answers and see right or wrong, with the reason, after every question.'},
+ {r:'cards',name:'Flashcards',meta:'78 cards',desc:'Flip through every term and sort the deck into “got it” and “still learning.”'},
+ {r:'match',name:'Match-Up',meta:'6 pairs · timed',desc:'Pair each term with its definition as fast as you can.'},
+ {r:'lightning',name:'Lightning Round',meta:'60 seconds',desc:'Quick vocab questions, back to back. A miss costs 3 seconds.'},
+ {r:'survival',name:'Survival',meta:'3 lives',desc:'Questions keep coming until your third miss. See how far you get.'},
+ {r:'sort',name:'Sort It',meta:'11 boards',desc:'Put each item in the right group: powers, plans, thinkers, articles, and more.'},
+ {r:'timeline',name:'Timeline',meta:'5 events per round',desc:'Put founding writings, events, and court cases in order.'},
+ {r:'mistakes',name:'Fix My Mistakes',meta:()=>{ const n=fixCount(); return n?n+' saved to fix':'Nothing saved yet'; },desc:'Every question you miss is saved here. Get it right twice to clear it.'}
+];
+function modeCard(m){
+  const meta=typeof m.meta==='function'?m.meta():m.meta;
+  return h('button',{class:'mode'+(m.feature?' feature':''),type:'button',onclick:()=>go(m.r)},
+    m.feature?h('div',{class:'mini-bubbles','aria-hidden':'true'},['A','B','C','D'].map((l,i)=>h('span',{class:'bubble'+(i===2?' on':'')},l))):null,
+    h('h3',{},m.name),h('p',{},m.desc),h('div',{class:'mmeta'},meta));
+}
+function viewHome(){
+  setNav('home');
+  const acc=S.total?Math.round(100*S.correct/S.total)+'%':'—';
+  const qTotal=QS.length+TERMS.length*2;
+  const chMeters=[1,2,3].map(c=>{ const ks=TERMS.filter(t=>t.ch===c); let seen=0,sum=0; ks.forEach(t=>{ const m=mastery(t.k); if(m!=null){ seen++; sum+=m; } }); const pct=Math.round(100*sum/ks.length); return h('div',{},h('div',{class:'mtop'},h('b',{},'Ch. '+c+' · '+CH[c]),h('span',{},pct+'% · '+seen+'/'+ks.length+' terms')),h('div',{class:'meter'},h('span',{style:'width:'+pct+'%'}))); });
+  const weak=TERMS.map(t=>({t,m:mastery(t.k),s:(S.terms[t.k]||{}).s||0})).filter(x=>x.m!=null&&x.m<0.8).sort((a,b)=>a.m-b.m||b.s-a.s).slice(0,6);
+  mount(
+    h('section',{class:'sheet hero'},
+      h('div',{},
+        h('div',{class:'eyebrow'},'AP U.S. Government · Unit 1 Review'),
+        h('h1',{},'Foundations of American Democracy'),
+        h('p',{class:'lede'},'All '+TERMS.length+' terms from your review sheet, turned into '+qTotal+' multiple-choice questions. Every question has four choices and one right answer.'),
+        h('div',{class:'row'},h('button',{class:'btn primary big',type:'button',onclick:()=>go('test')},'Start a practice test'),h('button',{class:'btn',type:'button',onclick:()=>go('cards')},'Flashcards'),h('button',{class:'btn ghost',type:'button',onclick:()=>go('guide')},'Study guide'))),
+      h('aside',{class:'side','aria-label':'Your progress'},
+        h('div',{class:'eyebrow'},'Your progress'),
+        h('div',{class:'stats'},stat(fmt(S.total),'Answered'),stat(acc,'Accuracy'),stat(S.bestStreak,'Best streak'),stat(fixCount(),'To fix')),
+        h('div',{class:'meters'},chMeters))),
+    h('h2',{class:'section-title'},'Ways to study'),
+    h('div',{class:'modes'},MODES.map(modeCard)),
+    h('section',{class:'panel guide-banner'},
+      h('div',{},h('h3',{},'Study guide'),h('p',{class:'muted'},'Every term with its definition, plus comparison charts for documents, cases, powers, plans, and checks and balances.')),
+      h('button',{class:'btn',type:'button',onclick:()=>go('guide')},'Open study guide')),
+    h('h2',{class:'section-title'},'Weak spots'),
+    h('section',{class:'panel'},weak.length
+      ?h('div',{class:'weak'},weak.map(w=>h('div',{class:'weak-row'},h('b',{},w.t.n),h('span',{class:'pct'},Math.round(w.m*100)+'%'),h('button',{class:'btn small',type:'button',onclick:()=>quizTerm(w.t.k)},'Practice'))))
+      :h('p',{class:'muted'},'Answer some questions first. The terms you miss most will show up here so you can practice them.')),
+    h('div',{class:'footer-row'},h('span',{},'Progress is saved in this browser only.'),resetBtn())
+  );
+}
+function resetBtn(){
+  let armed=false, t=0;
+  const b=h('button',{class:'btn ghost small',type:'button',onclick:()=>{
+    if(!armed){ armed=true; b.textContent='Click again to erase all progress'; t=setTimeout(()=>{ armed=false; b.textContent='Reset my progress'; },4000); }
+    else { clearTimeout(t); S=fresh(); save(); viewHome(); toast('Progress reset'); }
+  }},'Reset my progress');
+  return b;
+}
+function quizTerm(k){
+  const ids=QS.filter(o=>o.t===k).map(o=>o.id).concat(['v:def:'+k,'v:term:'+k]);
+  startQuiz({title:'Practice: '+TERM[k].n,mode:'test',ids:shuffle(ids),feedback:true,shuffle:true,again:()=>quizTerm(k)});
+}
+
+/* =========================================================
+   PRACTICE TEST SETUP
+   ========================================================= */
+function viewTest(){
+  setNav('test');
+  const s=Object.assign({chs:[1,2,3],topic:'all',len:25,ap:true,vocab:true,shuf:true,order:true,fb:true},S.settings.test||{});
+  const body=h('div',{class:'setup'});
+  const persist=()=>{ S.settings.test=s; save(); };
+  const field=(label,ctl)=>h('div',{class:'field'},h('div',{class:'field-label'},label),ctl);
+  function draw(){
+    const pool=poolIds(s), n=s.len==='all'?pool.length:Math.min(+s.len,pool.length);
+    keepFocus(()=>body.replaceChildren(
+      field('Chapters',h('div',{class:'chips'},[1,2,3].map(c=>chip('Ch. '+c+' · '+CH[c],s.chs.includes(c),()=>{ s.chs=s.chs.includes(c)?s.chs.filter(x=>x!==c):s.chs.concat(c).sort(); persist(); draw(); },'ch-'+c)))),
+      field('Topic',h('div',{class:'chips'},[['all','All topics']].concat(Object.entries(CAT)).map(([k,l])=>chip(l,s.topic===k,()=>{ s.topic=k; persist(); draw(); },'tp-'+k)))),
+      field('Question types',h('div',{class:'chips'},chip('Test-style questions',s.ap,()=>{ s.ap=!s.ap; persist(); draw(); },'ty-ap'),chip('Vocabulary questions',s.vocab,()=>{ s.vocab=!s.vocab; persist(); draw(); },'ty-v'))),
+      field('Length',h('div',{class:'chips'},[10,25,50,'all'].map(v=>chip(v==='all'?'All':v+' questions',String(s.len)===String(v),()=>{ s.len=v; persist(); draw(); },'len-'+v)))),
+      field('Options',h('div',{class:'chips'},
+        chip('Shuffle answer choices',s.shuf,()=>{ s.shuf=!s.shuf; persist(); draw(); },'op-shuf'),
+        chip('Shuffle question order',s.order,()=>{ s.order=!s.order; persist(); draw(); },'op-order'),
+        chip('Show right or wrong after each question',s.fb,()=>{ s.fb=!s.fb; persist(); draw(); },'op-fb'))),
+      s.fb?null:h('p',{class:'muted small'},'Exam mode: answers stay hidden until the results screen.'),
+      h('div',{class:'setup-foot'},
+        h('p',{class:'muted'},pool.length?pool.length+' questions match. This test has '+n+'.':'No questions match. Pick at least one chapter and one question type.'),
+        h('button',{class:'btn primary big',type:'button',disabled:!pool.length,'data-key':'start',onclick:()=>startTestFrom(s)},'Start test ('+n+')'))
+    ));
+  }
+  mount(h('section',{class:'sheet narrow'},h('div',{class:'eyebrow'},'Practice test'),h('h2',{class:'big-title'},'Build your test'),h('p',{class:'muted',style:'margin:6px 0 22px'},'Every question has four choices and one correct answer, just like the real test.'),body));
+  draw();
+}
+function startTestFrom(s){
+  let ids=poolIds(s); const n=s.len==='all'?ids.length:Math.min(+s.len,ids.length);
+  if(s.order) ids=shuffle(ids).slice(0,n);
+  else { const keep=new Set(shuffle(ids).slice(0,n)); ids=ids.filter(id=>keep.has(id)); }
+  startQuiz({title:'Practice test',mode:'test',ids,feedback:s.fb,shuffle:s.shuf,again:()=>startTestFrom(s)});
+}
+
+/* =========================================================
+   QUIZ ENGINE (practice test, survival, practice by term, mistakes)
+   ========================================================= */
+function startQuiz(cfg){
+  cleanup(); setNav('quiz'); window.scrollTo(0,0);
+  const st={i:0,res:[],t0:Date.now(),lives:cfg.lives||0,streak:0,best:0,picked:-1,revealed:false,q:null};
+  let queue=cfg.ids.slice(); const seen={}; let auto=0;
+  const wrap=h('section',{class:'quiz'}); mount(wrap);
+  const timerEl=h('span',{class:'qstat'});
+  const tick=()=>{ timerEl.textContent=fmtTime(Date.now()-st.t0); };
+  const iv=setInterval(tick,1000);
+  onCleanup(()=>{ clearInterval(iv); clearTimeout(auto); });
+  keyHandler=e=>{
+    const k=e.key.toLowerCase();
+    let i='1234'.indexOf(k); if(i<0&&k.length===1) i='abcd'.indexOf(k);
+    if(i>=0&&k.length===1){ e.preventDefault(); choose(i); return; }
+    if((k==='enter'||k==='arrowright')&&!(e.target instanceof HTMLButtonElement)){ e.preventDefault(); next(); return; }
+    if(k==='s') reshuffle();
+  };
+  load();
+
+  function load(){
+    if(cfg.mode==='survival'&&st.i>=queue.length) queue=queue.concat(shuffle(cfg.pool));
+    if(st.i>=queue.length) return finish();
+    st.q=buildQ(queue[st.i],cfg.shuffle); st.picked=-1; st.revealed=false;
+    draw(true);
+  }
+  function commit(i){
+    const q=st.q, ok=q.choices[i].ok;
+    st.picked=i; st.revealed=true;
+    record(q.id,q.t,ok);
+    st.res.push({q,picked:i,ok});
+    if(ok){ st.streak++; st.best=Math.max(st.best,st.streak); noteStreak(st.streak); } else { st.streak=0; if(cfg.lives) st.lives--; }
+    if(cfg.mode==='mistakes'){ seen[q.id]=(seen[q.id]||0)+1; if((q.id in S.mistakes)&&seen[q.id]<3) queue.splice(Math.min(queue.length,st.i+4),0,q.id); }
+    return ok;
+  }
+  function choose(i){
+    if(st.revealed||!st.q.choices[i]) return;
+    if(!cfg.feedback){ st.picked=i; draw(); return; }
+    const ok=commit(i);
+    draw();
+    if(ok){ confettiAt(wrap.querySelector('.choice.right'),st.streak>=5?60:40); if(cfg.mode==='survival') auto=setTimeout(next,1200); }
+  }
+  function next(){
+    clearTimeout(auto);
+    if(!cfg.feedback){ if(st.picked<0) return; commit(st.picked); }
+    else if(!st.revealed) return;
+    if(cfg.lives&&st.lives<=0) return finish();
+    st.i++; load();
+  }
+  function reshuffle(){ if(st.revealed) return; st.q.choices=shuffle(st.q.choices); st.picked=-1; draw(); }
+  function finish(){ showResults(cfg,st); }
+  function draw(isNew){
+    const q=st.q, n=st.i+1, survival=cfg.mode==='survival', total=queue.length;
+    const right=st.res.filter(r=>r.ok).length;
+    const revealed=st.revealed&&cfg.feedback;
+    const head=h('div',{class:'quiz-head'},
+      h('div',{class:'quiz-top'},
+        h('div',{class:'eyebrow'},cfg.title),
+        h('div',{class:'qstats'},
+          survival?h('span',{class:'lives',role:'img','aria-label':st.lives+' of 3 lives left'},[0,1,2].map(i=>h('span',{class:'life'+(i<st.lives?' on':'')}))):null,
+          survival?h('span',{class:'qstat'},'Score ',h('b',{},String(right))):h('span',{class:'qstat'},'Question ',h('b',{},n+' of '+total)),
+          cfg.feedback&&!survival?h('span',{class:'qstat'},h('b',{},String(right)),' correct'):null,
+          cfg.feedback?h('span',{class:'qstat'},'Streak ',h('b',{},String(st.streak))):null,
+          timerEl)),
+      survival?null:h('div',{class:'progress'},h('span',{style:'width:'+Math.round(100*st.i/Math.max(1,total))+'%'})));
+    const choices=h('div',{class:'choices',role:'group','aria-label':'Answer choices'},q.choices.map((c,i)=>{
+      let cls='choice';
+      if(revealed) cls+=c.ok?' right':(i===st.picked?' wrong':' dim');
+      else if(i===st.picked) cls+=' picked';
+      return h('button',{class:cls,type:'button',disabled:revealed,'data-key':'c'+i,onclick:()=>choose(i)},h('span',{class:'bubble','aria-hidden':'true'},LETTERS[i]),h('span',{class:'ctext'},h('span',{class:'sr'},LETTERS[i]+'. '),c.text));
+    }));
+    let fb=null;
+    if(revealed){
+      const ok=q.choices[st.picked].ok, ci=q.choices.findIndex(c=>c.ok);
+      fb=h('div',{class:'feedback '+(ok?'ok':'no'),role:'status'},
+        h('div',{class:'fb-title'},ok?'Correct':'Not quite. The answer is '+LETTERS[ci]+'.'),
+        q.x?h('p',{},q.x):null,
+        q.kind==='ap'?h('p',{class:'keyterm'},h('b',{},'Key term · '+q.term.n+': '),q.term.s):null);
+    }
+    const outOfLives=cfg.lives&&st.lives<=0, last=!survival&&st.i>=queue.length-1;
+    const actions=h('div',{class:'qactions'},
+      !st.revealed?h('button',{class:'btn ghost small',type:'button','data-key':'shuf',onclick:reshuffle},'Shuffle choices'):h('span'),
+      (revealed||!cfg.feedback)?h('button',{class:'btn primary',type:'button','data-key':'next',disabled:!cfg.feedback&&st.picked<0,onclick:next},(outOfLives||last)?'See results':'Next question'):null);
+    const card=h('article',{class:'sheet qcard'+(isNew?' enter':'')},
+      h('div',{class:'qtags'},h('span',{class:'qnum'},String(n)),h('span',{class:'tag'},'Ch. '+q.ch+' · '+CH[q.ch]),h('span',{class:'tag'},q.kind==='vocab'?'Vocabulary':CAT[q.term.cat])),
+      h('h2',{class:'qtext'},q.prompt),
+      q.quote?h('blockquote',{class:'qquote'},q.quote):null,
+      choices,fb,actions);
+    const foot=h('div',{class:'quiz-foot'},h('button',{class:'btn ghost small',type:'button',onclick:finish},survival?'End run':'End test'),h('span',{class:'hint'},'Keys: 1–4 or A–D to answer · Enter for next · S to shuffle'));
+    keepFocus(()=>wrap.replaceChildren(head,card,foot));
+    tick();
+    if(revealed){ const nb=wrap.querySelector('[data-key="next"]'); if(nb&&(!document.activeElement||document.activeElement===document.body)) nb.focus({preventScroll:true}); }
+    if(isNew&&wrap.getBoundingClientRect().top<0) wrap.scrollIntoView({block:'start'});
+  }
+}
+
+function showResults(cfg,st){
+  cleanup(); setNav('results'); window.scrollTo(0,0);
+  const res=st.res, total=res.length, right=res.filter(r=>r.ok).length, pct=total?Math.round(100*right/total):0;
+  const missedMap=new Map(); res.filter(r=>!r.ok).forEach(r=>missedMap.set(r.q.id,r)); const missed=[...missedMap.values()];
+  const survival=cfg.mode==='survival', mistakes=cfg.mode==='mistakes';
+  let title, big, sub, newBest=false;
+  if(survival){ const prev=S.best.survival||0; if(right>prev){ S.best.survival=right; newBest=prev>0; save(); } big=String(right); title=right>=25?'Outstanding run':right>=10?'Great run':'Run over'; sub=right+' right before your third miss. Best: '+(S.best.survival||0)+'.'; }
+  else if(mistakes){ const left=fixCount(); big=right+'/'+total; title=right===total&&total?'All correct':'Drill done'; sub=left+' question'+(left===1?'':'s')+' still saved. Get each one right twice to clear it.'; }
+  else { big=right+'/'+total; title=!total?'No answers yet':pct>=90?'Excellent work':pct>=80?'Great job':pct>=70?'Solid work':'Keep practicing'; sub=total?pct+'% · grade '+letter(pct)+' · '+fmtTime(Date.now()-st.t0):'Answer at least one question to get a score.'; }
+  const byCh=[1,2,3].map(c=>{ const items=res.filter(r=>r.q.ch===c); if(!items.length) return null; const r=items.filter(x=>x.ok).length, p=Math.round(100*r/items.length); return h('div',{},h('div',{class:'mtop'},h('b',{},'Ch. '+c+' · '+CH[c]),h('span',{},r+'/'+items.length+' · '+p+'%')),h('div',{class:'meter'},h('span',{style:'width:'+p+'%'}))); }).filter(Boolean);
+  const missedIds=missed.map(r=>r.q.id);
+  mount(h('section',{class:'results'},
+    h('div',{class:'sheet res-head'},
+      h('div',{class:'eyebrow'},cfg.title),
+      h('div',{class:'score-big'},big),
+      h('h2',{class:'res-title'},title),
+      h('p',{class:'res-sub'},sub),
+      h('div',{class:'row',style:'margin-top:10px'},
+        missed.length&&!survival?h('button',{class:'btn primary',type:'button',onclick:()=>startQuiz({title:'Retake: missed questions',mode:'test',ids:shuffle(missedIds),feedback:true,shuffle:true,again:cfg.again})},'Retake the '+missed.length+' I missed'):null,
+        cfg.again?h('button',{class:'btn'+(missed.length&&!survival?'':' primary'),type:'button',onclick:cfg.again},survival?'Start a new run':'Try again'):null,
+        h('button',{class:'btn ghost',type:'button',onclick:()=>go('home')},'All study modes'))),
+    byCh.length>1?h('section',{class:'panel'},h('h3',{class:'ph'},'By chapter'),h('div',{class:'meters'},byCh)):null,
+    missed.length?h('section',{class:'panel'},h('h3',{class:'ph'},'Review what you missed'),h('div',{class:'review'},missed.map(r=>{
+      const q=r.q, ci=q.choices.findIndex(c=>c.ok);
+      return h('article',{class:'review-item'},
+        h('h4',{},q.prompt),q.quote?h('blockquote',{class:'qquote'},q.quote):null,
+        h('div',{class:'ans bad'},h('span',{class:'dot','aria-hidden':'true'},'✗'),h('span',{},'Your answer: '+q.choices[r.picked].text)),
+        h('div',{class:'ans good'},h('span',{class:'dot','aria-hidden':'true'},'✓'),h('span',{},'Correct: '+q.choices[ci].text)),
+        q.x?h('p',{class:'x'},q.x):null);
+    }))):(total?h('section',{class:'panel empty'},'No misses this round. Every answer was right.'):null)
+  ));
+  if(!survival&&total>=5&&pct>=80) setTimeout(()=>FX.cannon(),150);
+  if(survival&&right>=10) setTimeout(()=>FX.cannon(),150);
+  if(newBest) toast('New best','Survival record: '+right);
+}
+
+/* =========================================================
+   SURVIVAL + MISTAKES
+   ========================================================= */
+function viewSurvival(){
+  setNav('survival');
+  const start=()=>{ const pool=poolIds({chs:[1,2,3],topic:'all',ap:true,vocab:true}); startQuiz({title:'Survival',mode:'survival',pool,ids:shuffle(pool),lives:3,feedback:true,shuffle:true,again:start}); };
+  mount(h('section',{class:'sheet narrow center-panel'},
+    h('div',{class:'eyebrow'},'Survival'),h('h2',{class:'big-title'},'Three lives, no question limit'),
+    h('p',{class:'muted',style:'max-width:52ch'},'Test-style and vocab questions from all three chapters keep coming until your third miss. Right answers move on by themselves.'),
+    h('div',{class:'best-line'},'Best run: '+(S.best.survival||0)),
+    h('button',{class:'btn primary big',type:'button',onclick:start},'Start')));
+}
+function viewMistakes(){
+  setNav('mistakes');
+  const ids=Object.keys(S.mistakes).filter(validId);
+  if(!ids.length){ mount(h('section',{class:'sheet narrow center-panel'},h('div',{class:'eyebrow'},'Fix my mistakes'),h('h2',{class:'big-title'},'Nothing to fix yet'),h('p',{class:'muted'},'Every question you miss in any mode is saved here. Get it right twice in a row to clear it.'),h('button',{class:'btn primary big',type:'button',onclick:()=>go('test')},'Take a practice test'))); return; }
+  const names=[...new Set(ids.map(id=>buildQ(id,false).term.n))];
+  const start=()=>startQuiz({title:'Fix my mistakes',mode:'mistakes',ids:shuffle(Object.keys(S.mistakes).filter(validId)),feedback:true,shuffle:true,again:()=>go('mistakes')});
+  mount(h('section',{class:'sheet narrow center-panel'},
+    h('div',{class:'eyebrow'},'Fix my mistakes'),h('h2',{class:'big-title'},ids.length+' question'+(ids.length===1?'':'s')+' to fix'),
+    h('p',{class:'muted',style:'max-width:54ch'},'Get each one right twice in a row to clear it. Questions you miss come back a few questions later in the same drill.'),
+    h('div',{class:'chips center'},names.slice(0,14).map(n=>h('span',{class:'tag'},n)),names.length>14?h('span',{class:'tag'},'+'+(names.length-14)+' more'):null),
+    h('button',{class:'btn primary big',type:'button',onclick:start},'Start drill')));
+}
+
+/* =========================================================
+   LIGHTNING ROUND
+   ========================================================= */
+function viewLightning(){
+  setNav('lightning');
+  let ch=S.settings.lch||'all', g=null, iv=0;
+  const wrap=h('section',{class:'narrow'}); mount(wrap);
+  onCleanup(()=>{ clearInterval(iv); g=null; });
+  const bestKey=()=>'lightning-'+ch;
+  function intro(){
+    keyHandler=null;
+    wrap.replaceChildren(h('div',{class:'sheet center-panel'},
+      h('div',{class:'eyebrow'},'Lightning round'),h('h2',{class:'big-title'},'60 seconds of vocab'),
+      h('p',{class:'muted',style:'max-width:52ch'},'Quick vocab questions, back to back. Answer as many as you can. A miss costs 3 seconds.'),
+      h('div',{class:'chips center'},CHOPTS.map(([v,l])=>chip(l,ch===v,()=>{ ch=v; S.settings.lch=v; save(); intro(); },'lch-'+v))),
+      h('div',{class:'best-line'},'Best score: '+(S.best[bestKey()]||0)),
+      h('button',{class:'btn primary big',type:'button',onclick:start},'Start')));
+  }
+  function start(){
+    g={left:60000,last:Date.now(),score:0,streak:0,missed:[],recent:[],lock:false,q:null};
+    keyHandler=e=>{ const i='1234'.indexOf(e.key); if(i>=0){ e.preventDefault(); answer(i); } };
+    nextQ(); iv=setInterval(tickT,100);
+  }
+  function tickT(){
+    if(!g) return; const now=Date.now(); g.left-=now-g.last; g.last=now;
+    if(g.left<=0){ g.left=0; end(); return; }
+    const bar=wrap.querySelector('.tbar>span'); if(bar) bar.style.width=(g.left/600)+'%';
+    const tl=wrap.querySelector('.tleft'); if(tl) tl.textContent=Math.ceil(g.left/1000)+'s';
+  }
+  function nextQ(){
+    if(!g) return;
+    let pool=TERMS.filter(t=>(ch==='all'||t.ch===+ch)&&!g.recent.includes(t.k));
+    if(!pool.length) pool=TERMS.filter(t=>ch==='all'||t.ch===+ch);
+    const t=pick(pool); g.recent.push(t.k); if(g.recent.length>12) g.recent.shift();
+    g.q=buildQ('v:'+(Math.random()<.5?'sdef':'sterm')+':'+t.k,true); g.lock=false; draw();
+  }
+  function answer(i){
+    if(!g||g.lock||!g.q.choices[i]) return;
+    g.lock=true; const c=g.q.choices[i]; const btns=wrap.querySelectorAll('.choice'); const btn=btns[i];
+    record(g.q.id,g.q.t,c.ok);
+    btns.forEach(b=>b.disabled=true);
+    if(c.ok){ g.streak++; g.score++; noteStreak(g.streak); btn.classList.add('right'); confettiAt(btn,26); setTimeout(nextQ,330); }
+    else { g.streak=0; g.left-=3000; g.missed.push(g.q.t); btn.classList.add('wrong'); btns[g.q.choices.findIndex(x=>x.ok)].classList.add('right'); const r=btn.getBoundingClientRect(); floatText('−3s',r.left+Math.min(r.width/2,140),r.top+r.height/2); setTimeout(nextQ,950); }
+    const sc=wrap.querySelector('#lscore'); if(sc) sc.textContent=String(g.score);
+    const sk=wrap.querySelector('#lstreak'); if(sk) sk.textContent=String(g.streak);
+  }
+  function draw(){
+    const q=g.q;
+    wrap.replaceChildren(h('div',{class:'quiz-head',style:'margin-bottom:14px'},
+      h('div',{class:'quiz-top'},h('div',{class:'eyebrow'},'Lightning round'),h('div',{class:'qstats'},h('span',{class:'qstat'},'Score ',h('b',{id:'lscore'},String(g.score))),h('span',{class:'qstat'},'Streak ',h('b',{id:'lstreak'},String(g.streak))),h('span',{class:'tleft'},Math.ceil(g.left/1000)+'s'))),
+      h('div',{class:'tbar'},h('span',{style:'width:'+(g.left/600)+'%'}))),
+      h('article',{class:'sheet qcard enter'},
+        q.quote?[h('div',{class:'eyebrow'},'Which term matches?'),h('p',{class:'lquote'},q.quote)]:[h('div',{class:'eyebrow'},'Which best describes'),h('h2',{class:'lprompt'},q.term.n)],
+        h('div',{class:'choices lgrid'},q.choices.map((c,i)=>h('button',{class:'choice',type:'button',onclick:()=>answer(i)},h('span',{class:'bubble','aria-hidden':'true'},LETTERS[i]),h('span',{class:'ctext'},c.text))))),
+      h('p',{class:'hint',style:'margin-top:12px;text-align:center'},'Keys 1–4 answer'));
+  }
+  function end(){
+    clearInterval(iv); keyHandler=null;
+    const sc=g.score, missed=[...new Set(g.missed)], key=bestKey(), prev=S.best[key]||0, isBest=sc>prev;
+    if(isBest){ S.best[key]=sc; save(); }
+    g=null;
+    wrap.replaceChildren(h('section',{class:'sheet res-head'},
+      h('div',{class:'eyebrow'},'Time’s up'),h('div',{class:'score-big'},String(sc)),h('h2',{class:'res-title'},isBest&&sc?'New best score':'Round over'),
+      h('p',{class:'res-sub'},'Best: '+(S.best[key]||0)),
+      h('div',{class:'row',style:'margin-top:10px'},h('button',{class:'btn primary',type:'button',onclick:start},'Play again'),h('button',{class:'btn',type:'button',onclick:intro},'Change chapter'),h('button',{class:'btn ghost',type:'button',onclick:()=>go('home')},'All study modes'))),
+      missed.length?h('section',{class:'panel',style:'margin-top:16px'},h('h3',{class:'ph'},'Terms you missed'),h('div',{class:'review'},missed.map(k=>h('div',{class:'review-item'},h('h4',{},TERM[k].n),h('p',{class:'x'},TERM[k].d))))):null);
+    if(isBest&&sc) FX.cannon();
+  }
+  intro();
+}
+
+/* =========================================================
+   FLASHCARDS
+   ========================================================= */
+function viewCards(){
+  setNav('cards');
+  const st={ch:S.settings.fch||'all',defFirst:!!S.settings.fdef,only:false,order:TERMS.map(t=>t.k),i:0,flipped:false};
+  const wrap=h('section',{class:'cards'}); mount(wrap);
+  const deck=()=>st.order.filter(k=>{ const t=TERM[k]; return (st.ch==='all'||t.ch===+st.ch)&&(!st.only||S.known[k]!==true); });
+  function flip(){ st.flipped=!st.flipped; const f=wrap.querySelector('.flash'); if(f){ f.classList.toggle('flipped',st.flipped); f.setAttribute('aria-label',st.flipped?'Show front of card':'Flip card'); } }
+  function move(d){ const n=deck().length; if(!n) return; st.i=(st.i+d+n)%n; st.flipped=false; draw(); }
+  function mark(val){
+    const k=deck()[st.i]; if(!k) return;
+    S.known[k]=val; save();
+    st.flipped=false;
+    if(!(st.only&&val)) st.i++;
+    if(st.i>=deck().length) st.i=0;
+    draw();
+  }
+  keyHandler=e=>{
+    const isBtn=e.target instanceof HTMLButtonElement;
+    if((e.key===' '||e.key==='Enter')&&!isBtn){ e.preventDefault(); flip(); }
+    else if(e.key==='ArrowRight'){ e.preventDefault(); move(1); }
+    else if(e.key==='ArrowLeft'){ e.preventDefault(); move(-1); }
+    else if(e.key==='1') mark(false);
+    else if(e.key==='2') mark(true);
+  };
+  function draw(){
+    const d=deck(); if(st.i>=d.length) st.i=0;
+    const k=d[st.i], t=k&&TERM[k];
+    const known=TERMS.filter(x=>S.known[x.k]===true).length, learning=TERMS.filter(x=>S.known[x.k]===false).length;
+    const controls=h('div',{class:'chips'},
+      CHOPTS.map(([v,l])=>chip(l,st.ch===v,()=>{ st.ch=v; S.settings.fch=v; save(); st.i=0; st.flipped=false; draw(); },'fch-'+v)),
+      chip('Definition first',st.defFirst,()=>{ st.defFirst=!st.defFirst; S.settings.fdef=st.defFirst; save(); st.flipped=false; draw(); },'fdef'),
+      chip('Only “still learning”',st.only,()=>{ st.only=!st.only; st.i=0; st.flipped=false; draw(); },'fonly'),
+      h('button',{class:'btn ghost small',type:'button','data-key':'fshuf',onclick:()=>{ st.order=shuffle(st.order); st.i=0; st.flipped=false; draw(); }},'Shuffle deck'));
+    let card;
+    if(!t){ card=h('div',{class:'panel empty'},st.only?'No cards left in “still learning.”':'No cards here.',h('div',{style:'margin-top:12px'},h('button',{class:'btn primary',type:'button',onclick:()=>{ st.only=false; draw(); }},'Show all cards'))); }
+    else {
+      const front=st.defFirst?[h('p',{class:'def-big'},t.d)]:[h('h2',{class:'term-big'},t.n)];
+      const back=st.defFirst?[h('h2',{class:'term-big'},t.n),h('p',{class:'ex'},t.ex)]:[h('p',{class:'def-big'},t.d),h('p',{class:'ex'},t.ex)];
+      card=h('button',{class:'flash'+(st.flipped?' flipped':''),type:'button','aria-label':st.flipped?'Show front of card':'Flip card','data-key':'flash',onclick:flip},
+        h('div',{class:'flash-inner'},
+          h('div',{class:'face front'},h('div',{class:'row'},h('span',{class:'tag'},'Ch. '+t.ch+' · '+CH[t.ch]),h('span',{class:'tag'},CAT[t.cat]),S.known[k]===true?h('span',{class:'tag'},'Got it'):null),front,h('div',{class:'flip-hint'},'Click to flip')),
+          h('div',{class:'face back'},back,h('div',{class:'flip-hint'},'Click to flip back'))));
+    }
+    keepFocus(()=>wrap.replaceChildren(
+      h('div',{class:'game-head'},h('div',{},h('div',{class:'eyebrow'},'Flashcards'),h('h2',{class:'game-title'},'Flip, then sort')),h('div',{class:'tally'},h('span',{class:'qstat'},'Got it ',h('b',{},String(known))),h('span',{class:'qstat'},'Learning ',h('b',{},String(learning))),h('span',{class:'qstat'},'Not sorted ',h('b',{},String(TERMS.length-known-learning))))),
+      controls,card,
+      t?h('div',{class:'card-nav'},h('button',{class:'btn ghost small',type:'button','data-key':'prev',onclick:()=>move(-1)},'← Previous'),h('span',{class:'card-count'},(st.i+1)+' / '+d.length),h('button',{class:'btn ghost small',type:'button','data-key':'nxt',onclick:()=>move(1)},'Next →')):null,
+      t?h('div',{class:'sortbtns'},h('button',{class:'btn',type:'button','data-key':'learn',onclick:()=>mark(false)},'Still learning'),h('button',{class:'btn primary',type:'button','data-key':'got',onclick:()=>mark(true)},'Got it')):null,
+      h('p',{class:'hint',style:'text-align:center'},'Keys: Space flips · ← → move · 1 still learning · 2 got it')));
+  }
+  draw();
+}
+
+/* =========================================================
+   MATCH-UP
+   ========================================================= */
+function viewMatch(){
+  setNav('match');
+  let ch=S.settings.mch||'all', g=null, iv=0;
+  const wrap=h('section',{class:'game'}); mount(wrap);
+  onCleanup(()=>{ clearInterval(iv); g=null; });
+  const secs=()=>g&&g.t0?((g.t1||Date.now())-g.t0)/1000:0;
+  function newGame(){
+    clearInterval(iv);
+    const pool=shuffle(TERMS.filter(t=>ch==='all'||t.ch===+ch)), picks=[];
+    for(const t of pool){ if(picks.length===6) break; if(picks.some(p=>avoid(p,t))) continue; picks.push(t); }
+    g={picks,left:shuffle(picks.map(t=>t.k)),right:shuffle(picks.map(t=>t.k)),sel:null,done:new Set(),misses:0,t0:0,t1:0,bad:null,result:null};
+    draw();
+  }
+  function tap(side,k){
+    if(!g||g.t1||g.done.has(k)) return;
+    if(!g.t0){ g.t0=Date.now(); iv=setInterval(()=>{ const t=wrap.querySelector('#mtime'); if(t) t.textContent=secs().toFixed(1)+'s'; },100); }
+    if(!g.sel||g.sel.side===side){ g.sel={side,k}; draw(); return; }
+    if(g.sel.k===k){
+      g.done.add(k); g.sel=null; draw();
+      confettiAt(wrap.querySelector('[data-key="'+side+'-'+k+'"]'),20);
+      if(g.done.size===g.picks.length) win();
+    } else {
+      g.misses++; g.bad=[g.sel.side+'-'+g.sel.k,side+'-'+k]; g.sel=null; draw();
+      const gg=g; setTimeout(()=>{ if(g===gg){ g.bad=null; draw(); } },520);
+    }
+  }
+  function win(){
+    g.t1=Date.now(); clearInterval(iv);
+    const s=secs(), key='match-'+ch, prev=S.best[key], isBest=!prev||s<prev;
+    if(isBest){ S.best[key]=+s.toFixed(1); save(); }
+    g.result={s,isBest:isBest&&!!prev};
+    draw();
+    setTimeout(()=>{ FX.cannon(); if(g&&g.result&&g.result.isBest) toast('New best time',s.toFixed(1)+' seconds'); },120);
+  }
+  function draw(){
+    if(!g) return;
+    const tile=(side,k)=>{ const t=TERM[k], key=side+'-'+k; let cls='tile '+(side==='l'?'term':'def'); if(g.done.has(k)) cls+=' matched'; else if(g.sel&&g.sel.side===side&&g.sel.k===k) cls+=' sel'; if(g.bad&&g.bad.includes(key)) cls+=' miss'; return h('button',{class:cls,type:'button','data-key':key,disabled:g.done.has(k),onclick:()=>tap(side,k)},side==='l'?t.n:t.s); };
+    const best=S.best['match-'+ch];
+    keepFocus(()=>wrap.replaceChildren(
+      h('div',{class:'game-head'},h('div',{},h('div',{class:'eyebrow'},'Match-Up'),h('h2',{class:'game-title'},'Match each term to its meaning')),
+        h('div',{class:'qstats'},h('span',{class:'qstat'},'Time ',h('b',{id:'mtime'},secs().toFixed(1)+'s')),h('span',{class:'qstat'},'Matched ',h('b',{},g.done.size+'/6')),h('span',{class:'qstat'},'Misses ',h('b',{},String(g.misses))),h('span',{class:'qstat'},'Best ',h('b',{},best?best+'s':'—')))),
+      h('div',{class:'chips'},CHOPTS.map(([v,l])=>chip(l,ch===v,()=>{ ch=v; S.settings.mch=v; save(); newGame(); },'mch-'+v)),h('button',{class:'btn ghost small',type:'button','data-key':'mnew',onclick:newGame},'New board')),
+      g.result?h('div',{class:'panel result-banner'},h('div',{},h('b',{},'Cleared in '+g.result.s.toFixed(1)+' seconds'),h('p',{class:'muted'},g.misses+' miss'+(g.misses===1?'':'es'))),h('button',{class:'btn primary',type:'button','data-key':'mplay',onclick:newGame},'Play again')):null,
+      h('div',{class:'match-grid'},h('div',{class:'mcol'},h('div',{class:'mcol-h'},'Terms'),g.left.map(k=>tile('l',k))),h('div',{class:'mcol'},h('div',{class:'mcol-h'},'Definitions'),g.right.map(k=>tile('r',k))))));
+  }
+  newGame();
+}
+
+/* =========================================================
+   SORT IT
+   ========================================================= */
+function viewSort(){
+  setNav('sort');
+  let set=SORTS.find(s=>s.id===S.settings.sort)||SORTS[0], g=null;
+  const wrap=h('section',{class:'game'}); mount(wrap);
+  function load(s){ set=s; S.settings.sort=s.id; save(); g={tray:shuffle(s.items.map(([text,b],i)=>({id:i,text,b,missed:false}))),placed:Object.fromEntries(s.buckets.map(b=>[b[0],[]])),sel:null,misses:0,shake:null,done:false}; draw(); }
+  function place(id,bk){
+    const it=g.tray.find(x=>x.id===id); if(!it) return;
+    if(it.b===bk){
+      g.tray=g.tray.filter(x=>x!==it); g.placed[bk].push(it); g.sel=null; draw();
+      if(!g.tray.length){ g.done=true; draw(); setTimeout(()=>{ if(g.misses===0) FX.cannon(); else confettiAt(wrap.querySelector('.result-banner'),60); },120); }
+    } else {
+      it.missed=true; g.misses++; g.sel=null; g.shake={id,bk}; draw();
+      const gg=g; setTimeout(()=>{ if(g===gg) g.shake=null; },450);
+    }
+  }
+  function draw(){
+    const total=set.items.length, idx=SORTS.indexOf(set);
+    const selItem=g.sel!=null?g.tray.find(x=>x.id===g.sel):null;
+    const firstTry=total-new Set(Object.values(g.placed).flat().filter(x=>x.missed).map(x=>x.id)).size;
+    keepFocus(()=>wrap.replaceChildren(
+      h('div',{class:'game-head'},h('div',{},h('div',{class:'eyebrow'},'Sort It · board '+(idx+1)+' of '+SORTS.length),h('h2',{class:'game-title'},set.name),h('p',{class:'muted'},set.desc)),
+        h('div',{class:'qstats'},h('span',{class:'qstat'},'Sorted ',h('b',{},(total-g.tray.length)+'/'+total)),h('span',{class:'qstat'},'Misses ',h('b',{},String(g.misses))))),
+      h('div',{class:'chips'},SORTS.map(s=>chip(s.name,s===set,()=>load(s),'sb-'+s.id))),
+      g.done?h('div',{class:'panel result-banner'},h('div',{},h('b',{},g.misses?'Board complete':'Perfect sort'),h('p',{class:'muted'},firstTry+' of '+total+' right on the first try')),
+        h('div',{class:'row'},h('button',{class:'btn primary',type:'button','data-key':'snext',onclick:()=>load(SORTS[(idx+1)%SORTS.length])},'Next board'),h('button',{class:'btn',type:'button','data-key':'sagain',onclick:()=>load(set)},'Replay'))):null,
+      g.done?null:h('div',{class:'select-hint',role:'status'},selItem?'Now click the group for: '+selItem.text:'Click an item, then click its group. You can also drag items.'),
+      g.done?null:h('div',{class:'tray'},g.tray.map(it=>h('button',{class:'item'+(g.sel===it.id?' sel':'')+(it.missed?' missed':'')+(g.shake&&g.shake.id===it.id?' shake':''),type:'button',draggable:'true','data-key':'it-'+it.id,
+        ondragstart:e=>{ try{ e.dataTransfer.setData('text/plain',String(it.id)); e.dataTransfer.effectAllowed='move'; }catch(_){} g.sel=it.id; },
+        onclick:()=>{ g.sel=g.sel===it.id?null:it.id; draw(); }},it.text))),
+      h('div',{class:'buckets'},set.buckets.map(([bk,name])=>h('button',{class:'bucket'+(selItem?' armed':'')+(g.shake&&g.shake.bk===bk?' shake':''),type:'button','data-bucket':bk,'data-key':'bk-'+bk,
+        onclick:()=>{ if(g.sel!=null) place(g.sel,bk); },
+        ondragover:e=>{ e.preventDefault(); e.currentTarget.classList.add('over'); },
+        ondragleave:e=>{ e.currentTarget.classList.remove('over'); },
+        ondrop:e=>{ e.preventDefault(); e.currentTarget.classList.remove('over'); let id=g.sel; try{ const d=e.dataTransfer.getData('text/plain'); if(d!=='') id=+d; }catch(_){} if(id!=null) place(id,bk); }},
+        h('h4',{},name),g.placed[bk].map(it=>h('span',{class:'placed'+(it.missed?' late':'')},it.text)))))));
+  }
+  load(set);
+}
+
+/* =========================================================
+   TIMELINE
+   ========================================================= */
+function viewTimeline(){
+  setNav('timeline');
+  const st={rounds:0,perfect:0}; let g=null;
+  const wrap=h('section',{class:'narrow'}); mount(wrap);
+  function newRound(){ const used=new Set(), picks=[]; for(const e of shuffle(EVENTS)){ if(picks.length===5) break; if(used.has(e[0])) continue; used.add(e[0]); picks.push(e); } g={cards:shuffle(picks),picks:[],checked:false}; draw(); }
+  function tap(e){
+    if(g.checked) return;
+    const at=g.picks.indexOf(e);
+    if(at>=0){ if(at===g.picks.length-1){ g.picks.pop(); draw(); } return; }
+    g.picks.push(e);
+    if(g.picks.length===g.cards.length) check(); else draw();
+  }
+  function check(){
+    g.checked=true; const sorted=[...g.cards].sort((a,b)=>a[0]-b[0]);
+    g.sorted=sorted; g.good=sorted.map((e,i)=>g.picks[i]===e);
+    const perfect=g.good.every(Boolean);
+    st.rounds++; if(perfect) st.perfect++;
+    draw();
+    if(perfect) FX.cannon();
+  }
+  function draw(){
+    let list;
+    if(!g.checked){
+      list=g.cards.map(e=>{ const at=g.picks.indexOf(e); return h('button',{class:'tl-card'+(at>=0?' picked':''),type:'button','data-key':'tl-'+e[0],onclick:()=>tap(e)},h('span',{class:'tl-n','aria-hidden':'true'},at>=0?String(at+1):''),h('span',{},e[1]),h('span',{class:'sr'},at>=0?'Position '+(at+1):'Not placed yet')); });
+    } else {
+      list=g.sorted.map((e,i)=>{ const yourPos=g.picks.indexOf(e)+1; return h('div',{class:'tl-card '+(g.good[i]?'good':'bad')},h('span',{class:'tl-n',title:'Your pick'},String(yourPos)),h('span',{},e[1],g.good[i]?null:h('span',{class:'muted small',style:'display:block'},'You put this at #'+yourPos+'. It belongs at #'+(i+1)+'.')),h('span',{class:'tl-year'},String(e[0]))); });
+    }
+    const n=g.checked?g.good.filter(Boolean).length:0;
+    keepFocus(()=>wrap.replaceChildren(
+      h('div',{class:'game-head',style:'margin-bottom:14px'},h('div',{},h('div',{class:'eyebrow'},'Timeline'),h('h2',{class:'game-title'},g.checked?'Correct order':'Click from earliest to latest')),
+        h('div',{class:'qstats'},h('span',{class:'qstat'},'Rounds ',h('b',{},String(st.rounds))),h('span',{class:'qstat'},'Perfect ',h('b',{},String(st.perfect))))),
+      g.checked?h('div',{class:'panel result-banner',style:'margin-bottom:14px'+(n===5?'':';border-color:var(--rule);background:var(--sheet)')},h('div',{},h('b',{},n===5?'All five in order':n+' of 5 in the right spot'),h('p',{class:'muted'},'Years are shown on the right.')),h('button',{class:'btn primary',type:'button','data-key':'tlnext',onclick:newRound},'Next round')):h('p',{class:'muted',style:'margin-bottom:14px'},'Click the earliest event first. Click your last pick again to undo it.'),
+      h('div',{class:'tl-list'},list),
+      !g.checked&&g.picks.length?h('div',{class:'row',style:'margin-top:14px'},h('button',{class:'btn ghost small',type:'button','data-key':'tlclear',onclick:()=>{ g.picks=[]; draw(); }},'Clear picks')):null));
+  }
+  newRound();
+}
+
+/* =========================================================
+   STUDY GUIDE
+   ========================================================= */
+function viewGuide(opts){
+  setNav('guide');
+  let tab=opts.tab||'terms', query=opts.q||'', ch='all';
+  const wrap=h('section',{}); mount(wrap);
+  const listBox=h('div',{}), countEl=h('p',{class:'muted small',style:'margin-top:10px'}), chipBox=h('div',{class:'chips'});
+  const search=h('input',{type:'search',id:'guide-search',class:'search',placeholder:'Search terms, people, cases…',value:query,'aria-label':'Search the study guide',autocomplete:'off'});
+  search.addEventListener('input',()=>{ query=search.value; drawList(); });
+  function entry(t){ return h('article',{class:'gentry'},h('div',{class:'gentry-top'},h('h4',{},t.n),h('span',{class:'tag'},CAT[t.cat])),h('p',{},t.d),h('p',{class:'gex'},h('b',{},'Remember: '),t.ex),h('button',{class:'btn small',type:'button',onclick:()=>quizTerm(t.k)},'Practice this term')); }
+  function drawChips(){ keepFocus(()=>chipBox.replaceChildren(...CHOPTS.map(([v,l])=>chip(l,ch===v,()=>{ ch=v; drawChips(); drawList(); },'gch-'+v)))); }
+  function drawList(){
+    const qq=query.trim().toLowerCase();
+    const items=TERMS.filter(t=>(ch==='all'||t.ch===+ch)&&(!qq||(t.n+' '+t.d+' '+t.ex).toLowerCase().includes(qq)));
+    countEl.textContent='Showing '+items.length+' of '+TERMS.length+' terms';
+    const groups=[1,2,3].map(c=>[c,items.filter(t=>t.ch===c)]).filter(([,a])=>a.length);
+    listBox.replaceChildren(...(groups.length?groups.map(([c,a])=>h('div',{class:'ggroup'},h('h3',{class:'ghead'},'Chapter '+c+' · '+CH[c]),h('div',{class:'gitems'},a.map(entry)))):[h('div',{class:'panel empty',style:'margin-top:18px'},'No terms match that search.')]));
+  }
+  function draw(){
+    const tabs=h('div',{class:'tabs',role:'tablist'},
+      h('button',{class:'tab',role:'tab',type:'button','aria-selected':String(tab==='terms'),onclick:()=>{ tab='terms'; draw(); }},'All '+TERMS.length+' terms'),
+      h('button',{class:'tab',role:'tab',type:'button','aria-selected':String(tab==='charts'),onclick:()=>{ tab='charts'; draw(); }},'Comparison charts'));
+    let pane;
+    if(tab==='terms'){ pane=h('div',{style:'margin-top:18px'},h('div',{style:'display:grid;gap:12px'},search,chipBox),countEl,listBox); drawChips(); drawList(); }
+    else {
+      pane=h('div',{style:'margin-top:18px'},
+        h('div',{class:'chips'},TABLES.map((T,i)=>h('button',{class:'tag jump',type:'button',onclick:()=>{ const el=document.getElementById('tbl-'+i); if(el) el.scrollIntoView({behavior:FX.reduce?'auto':'smooth',block:'start'}); }},T.t))),
+        TABLES.map((T,i)=>h('section',{class:'tsec',id:'tbl-'+i},h('h3',{},T.t),h('p',{class:'note'},T.note),
+          h('div',{class:'tablewrap'},h('table',{},h('thead',{},h('tr',{},T.head.map(x=>h('th',{scope:'col'},x)))),h('tbody',{},T.rows.map(r=>h('tr',{},h('th',{scope:'row'},r[0]),r.slice(1).map(c=>h('td',{},c))))))))));
+    }
+    wrap.replaceChildren(
+      h('div',{class:'game-head'},h('div',{},h('div',{class:'eyebrow'},'Study guide'),h('h2',{class:'game-title'},'Everything on the review sheet')),h('button',{class:'btn primary',type:'button',onclick:()=>go('test')},'Test yourself')),
+      h('div',{style:'margin-top:16px'},tabs),pane);
+  }
+  draw();
+}
+
+/* =========================================================
+   BOOT
+   ========================================================= */
+document.getElementById('brand').addEventListener('click',()=>go('home'));
+document.getElementById('nav-home').addEventListener('click',()=>go('home'));
+(function(){ let r=''; try{ r=location.hash.slice(1); }catch(e){} render(ROUTES[r]?r:'home'); })();
+</script>
+
+</body>
+</html>
